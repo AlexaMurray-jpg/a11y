@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: style.css
+  pandoc_args: ["--lua-filter=macro.lua"]
   config:
     toc:
       before: |
