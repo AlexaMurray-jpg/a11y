@@ -1,0 +1,107 @@
+# Meta
+
+## Syntax {-}
+
+:::{.det}
+[Collapsible Section]{.summ}
+
+- syntax:
+
+  ```
+  :::{.det}
+  [A Summary]{.summ}
+  
+  Details Go Here
+  
+  #. Item 1
+  #. Item 2
+  #. Item 3
+  
+  :::
+  ```
+
+- produces:
+
+  :::{.det}
+  
+  [A Summary]{.summ}
+  
+  Details Go Here
+  
+  #. Item 1
+  #. Item 2
+  #. Item 3
+  
+  :::
+
+:::
+
+:::{.det}
+
+[Page Construction Label]{.summ}
+
+- syntax: 
+
+  ```
+  {{construction}}
+  ```
+- produces:
+
+  {{construction}}
+
+:::
+
+
+:::{.det}
+
+[Section Construction Label]{.summ}
+
+- syntax:
+
+  ```
+  {{sconstruction}}
+  ```
+
+- produces:
+
+  {{sconstruction}}
+
+:::
+
+
+:::{.det}
+
+[Page-Specific TOC]{.summ}
+
+
+- syntax:
+
+  ```
+  :::{.back-toc}
+
+  [TOC](#page-specific-toc-label)
+  
+  :::
+  ```
+- produces:
+
+  *(uses example toc-link)*
+
+  :::{.back-toc}
+
+  [TOC](#bs-toc)
+  
+  :::
+
+:::
+
+## Link Labels
+
+[msnip]: https://snip.mathpix.com/home  "Mathpix Snip Web App"
+
+- `[msnip]: https://snip.mathpix.com/home  "Mathpix Snip Web App"`
+
+## Maintenance
+
+- macro.lua
+- style.css

@@ -1,1 +1,198 @@
-# Introduction {#intro}
+# Beginner STEM—Quick Start Guide
+
+## Intro {-}
+
+For the beginner STEM workflow, you will convert a math-heavy inaccessible PDF document into an accessible read-only Word document using Mathpix and Microsoft Office Word.
+
+This a quick-start guide, and it will mix instruction with demonstration.
+
+:::{.small}
+
+*These instructions are mostly for the Mathpix web app, but you will have a much easier time of it if you use the desktop app. The desktop app supports multi-equation output directly within the app, but in the web app you will have to download a Word document for multi-equation output.*
+
+*However, you should feel free to use whichever platform you prefer, as long as you know how to use it.*
+
+:::
+
+The steps you will follow to do this are:
+
+#. Convert PDF to Word document using Mathpix.
+#. Remediate the Word document.
+   - In any order:
+      - Correct errors in the math.
+      - Do general document remediation.
+#. Save as a read-only Word document.
+#. Submit the read-only Word document.
+
+
+For detailed steps, continue reading below. We will demonstrate using Diandra's preferred beginner example PDF, Chaves28.
+
+:::{.comment}
+- [Overview Video | Windows]()
+- [Overview Video | macOS]()
+:::
+
+## TOC {-#bs-toc}
+
+- \@ref(pdf-to-word) [Convert PDF to Word](#pdf-to-word)
+- \@ref(remediate-word) [Remediate the Word Document.](#remediate-word)
+  - \@ref(correct-math) [Correct the Math](#correct-math)
+  - \@ref(remediate-general) [Apply General Document Remediation](#remediate-general)
+- \@ref(save-read-only) [Save as Read-Only Word Doc](#save-read-only)
+
+## Convert PDF to Word {#pdf-to-word}
+
+We will use Mathpix to convert a PDF to a Word Document.
+
+:::{.det}
+[Mathpix Web App Instructions]{.summ}
+
+#. Go to the [Snip Web App][msnip].
+#. Move to the **PDF** tab.
+#. Click the **+** sign.
+#. Select the file in File Explorer/Finder.
+#. Select **Upload** in the pop-up window.
+#. When the file shows up at the top of the PDF sidebar, click the three-dot menu.
+#. Choose **Export To** > **DOCX**.
+
+:::
+
+
+:::{.back-toc}
+
+[TOC](#bs-toc)
+
+:::
+
+## Remediate the Word Document. {#remediate-word}
+
+{{sconstruction}}
+
+### Correct the Math {#correct-math}
+
+We will primarily correct the math using the Mathpix snipping tool: you'll use zoomed in photos of individual math expressions (or sets of expressions) to get a math representation that you paste into Word in place of the original faulty expression.
+
+There are ways to correct the equations by using the equation editor in the Word ribbon, or by switching over to linear mode temporarily, but as this is a beginner quick-start, I recommend zoom-and-snip.
+
+### Zoom-And-Snip
+
+When snipping indivdiual equations, zoom in as far as you can, and disregard the equation numbering—it's easy to add that back in with markup, even in Word.
+
+:::{.det}
+
+[Mathpix Web App Instructions]{.summ}
+
+#. In the original document, zoom in to just the math expression.
+   - Zoom: **Ctrl** + **+** (**Cmd** + **+**)
+#. Take a screenshot.
+   - Screenshot: **Win** + **Shift** + **S** (**Cmd** +  **Shift** + **4**)
+      - Change settings to save to clipboard [macOS]: **Cmd** +  **Shift** + **5**
+   - Support Articles: [Windows](https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots) | [macOS](https://support.apple.com/en-us/102646)
+#. Go to the [Snip Web App][msnip].
+#. Hover anywhere over the web app home screen and use keyboard shortcuts to paste the screenshot on your clipboard.
+    - **Ctrl** + **V** (**Cmd** + **V**)
+#. From the right-hand sidebar, copy the **MathML (MS Word)**.
+#. In the Word document, delete the faulty equation and paste in the MathML on your clipboard.
+#. Add equation numbering.
+    #. Click into the equation box.
+    #. Arrow over to the end of the equation (if you are still inside the equation box, a visible outline will show).
+    #. Type `# (1.1)`, where 1.1 is replaced by the equation number, and press **Enter**.
+
+:::
+
+#### Linear Mode Correction
+
+You can switch into Linear Mode to correct the equation using either UnicodeMath or LaTeX, then switch back to Professional Mode. [Microsoft Support \| Linear format equations](https://support.microsoft.com/en-us/word/linear-format-equations-using-unicodemath-and-latex-in-word)
+
+#. Click into the equation box.
+
+    A new Equations tab will appear in the Word ribbon.
+
+#. Select **Unicode** or **LaTeX** from the Conversions group of the Equations tab.
+#. Convert the equation to Linear mode.
+    #. Click the dropdown arrow on the right of the equation box.
+    #. Select **Linear**.
+#. Revise the UnicodeMath or LaTeX.
+#. Convert the equation back to Professional mode.
+    #. Click the dropdown arrow on the right of the equation box.
+    #. Select **Professional**.
+
+[Example Linear Mode Correction](https://youtu.be/wIC0EhO3iSE)
+
+:::{.comment}
+
+:::{.small}
+[Proof Linear Mode](https://youtu.be/wIC0EhO3iSE)
+:::
+
+:::
+
+#### Equation Tab Correction
+
+You can use the Equation tab of the Word ribbon to correct math.
+
+#.  Click into the equation box.
+
+    A new Equation tab will appear in the Word ribbon.
+
+#.  Delete corrupted parts of the equation.
+
+#.  Insert structures as needed (from the Structures group).
+
+#.  Fill in empty structures with symbols.
+
+:::{.back-toc}
+
+[TOC](#bs-toc)
+
+:::
+
+### Apply General Document Remediation {#remediate-general}
+
+Use your typical Word ribbon tools to remediate the document—apply heading structures, list structures, add alt text to images, make sure links have descriptive text, etc.
+
+For Chaves, we will do the following:
+
+#.  Apply heading structures, in order.
+    #.  Click into each heading (no need to select all text).
+    #.  Go to **Home**  **Styles** and hover over the current heading level.
+    #.  Right-click and choose **Update Heading [#] to match selection.**
+
+        *Skip the **Title** style and apply headings in order, as some may not appear until the prior heading level has been applied: **Heading 3** not appearing until **Heading 2** has been applied.*
+#. Set Line spacing to **Single**.
+    #. **Ctrl** + **A** (**Cmd** + **A**) to select all text.
+    #. Right-click
+    #. Select **Paragraph**
+    #. In Spacing, set Line spacing to **Single**.
+#. Adjust font size down to match pagination of original document.
+    #. **Ctrl** + **A** (**Cmd** + **A**) to select all text.
+    #. **Ctrl** + **[** (**Cmd** + **[**) to increment the font size down.
+    
+:::{.back-toc}
+
+[TOC](#bs-toc)
+
+:::
+
+## Save as Read-Only Word Doc {#save-read-only}
+
+**Windows OS**
+
+1. **File** > **Save As**
+2. **More Options** > **Tools** > **General Options**
+3. Select **Read-only recommended**.
+
+:::{.small}
+[Microsot Support Article](https://support.microsoft.com/en-us/word/make-a-document-read-only-in-word)
+:::
+
+**macOS**
+
+
+{{sconstruction}}
+
+:::{.back-toc}
+
+[TOC](#bs-toc)
+
+:::
