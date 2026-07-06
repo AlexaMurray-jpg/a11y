@@ -1,9 +1,19 @@
 return {
     Div = function(elem)
       if  elem.classes:includes("det") then
-        local result = pandoc.List({ pandoc.RawBlock('html', '<details>') })
+        local result = pandoc.List({ pandoc.RawBlock('html', '<details class = "det">') })
         result:extend(elem.content)
         result:insert(pandoc.RawBlock('html', '</details>'))
+        return result
+      elseif  elem.classes:includes("small") then
+        local result = pandoc.List({ pandoc.RawBlock('html', '<small>') })
+        result:extend(elem.content)
+        result:insert(pandoc.RawBlock('html', '</small>'))
+        return result
+      elseif  elem.classes:includes("comment") then
+        local result = pandoc.List({ pandoc.RawBlock('html', '<!--') })
+        result:extend(elem.content)
+        result:insert(pandoc.RawBlock('html', '-->'))
         return result
       else
         return elem
