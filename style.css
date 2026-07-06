@@ -18,6 +18,10 @@ pre code {
   margin-bottom: -1rem;
 }
 
+.det {
+  margin-bottom: 1rem;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal a {
   color: #3878B7 !important;
   text-decoration: underline !important; /* better a11y */
