@@ -27,9 +27,14 @@ The steps you will follow to do this are:
 
 For detailed steps, continue reading below. We will demonstrate using Diandra's preferred beginner example PDF, Chaves28.
 
+- [Overview Video | macOS](https://drive.google.com/file/d/1JI6PXYhreSiwc6RaLstJsB24iaCrUkSQ/view?usp=drive_link)
+
+:::{.small}
+updated, cleaner video to come
+:::
+
 :::{.comment}
 - [Overview Video | Windows]()
-- [Overview Video | macOS]()
 :::
 
 ## TOC {-#bs-toc}
