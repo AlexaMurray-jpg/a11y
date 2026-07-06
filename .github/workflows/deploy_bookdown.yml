@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - main
+
+name: deploy-bookdown
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+
+      - name: Install R package dependencies
+        run: Rscript -e 'install.packages(c("rmarkdown", "bookdown"))'
+
+      - name: Render book
+        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+
+      - name: Upload book as Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: "_book"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
