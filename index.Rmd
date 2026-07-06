@@ -19,4 +19,10 @@ knitr::write_bib(c(
 ), 'packages.bib')
 ```
 
-# Home Page {-}
+# Home Page
+
+{{construction}}
+
+a11y
+
+: digital accessibility
