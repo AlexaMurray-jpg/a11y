@@ -12,3 +12,13 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.back-toc {
+  font-size: 0.85rem;
+  margin-bottom: -1rem;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #3878B7 !important;
+  text-decoration: underline !important; /* better a11y */
+}
