@@ -24,19 +24,19 @@ pre code {
 
 .figure-row {
   display: flex;
-  flex-wrap: wrap; /* allows stacking on narrow viewports */
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-block: 1.5rem;
   flex-direction: row;
   width: 100%;
-  align-items: flex-start; /* prevents tall items from stretching short ones */
+  align-items: flex-start;
 }
 
 .figure-row > figure {
   /*flex: 1 0 auto;*/
   flex: 1 1 0;
-  min-width: 0; /* critical: prevents flex items from overflowing based on content */
-  margin: 0; /* reset default figure margin so it doesn't collide with siblings */
+  min-width: 0;
+  margin: 0; 
   display: flex;
   flex-direction: column;
 }
@@ -55,12 +55,12 @@ pre code {
 }
 
 .figure-row > figure iframe {
-  aspect-ratio: 16 / 9; /* adjust to match your embed's actual ratio */
+  aspect-ratio: 16 / 9;
 }
 
 .figure-row > figure > figcaption {
   margin-top: 0.5rem;
-  overflow-wrap: break-word; /* wraps long unbroken strings like URLs */
+  overflow-wrap: break-word;
   word-break: break-word;
 }
 
