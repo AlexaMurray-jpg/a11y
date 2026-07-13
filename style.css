@@ -22,6 +22,48 @@ pre code {
   margin-bottom: 1rem;
 }
 
+.figure-row {
+  display: flex;
+  flex-wrap: wrap; /* allows stacking on narrow viewports */
+  gap: 1.5rem;
+  margin-block: 1.5rem;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start; /* prevents tall items from stretching short ones */
+}
+
+.figure-row > figure {
+  /*flex: 1 0 auto;*/
+  flex: 1 1 0;
+  min-width: 0; /* critical: prevents flex items from overflowing based on content */
+  margin: 0; /* reset default figure margin so it doesn't collide with siblings */
+  display: flex;
+  flex-direction: column;
+}
+
+.figure-row > figure * {
+  min-width: 0;
+}
+
+.figure-row > figure > img,
+.figure-row > figure > video,
+.figure-row > figure > iframe {
+  width: 100% !important;
+  max-width; 100%;
+  height: auto;
+  display: block;
+}
+
+.figure-row > figure iframe {
+  aspect-ratio: 16 / 9; /* adjust to match your embed's actual ratio */
+}
+
+.figure-row > figure > figcaption {
+  margin-top: 0.5rem;
+  overflow-wrap: break-word; /* wraps long unbroken strings like URLs */
+  word-break: break-word;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal a {
   color: #3878B7 !important;
   text-decoration: underline !important; /* better a11y */

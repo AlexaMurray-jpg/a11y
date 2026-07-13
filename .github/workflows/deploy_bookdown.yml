@@ -30,6 +30,9 @@ jobs:
       - name: Render book
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
 
+      - name: Copy video assets into output
+        run: cp -r video _book/video
+
       - name: Upload book as Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

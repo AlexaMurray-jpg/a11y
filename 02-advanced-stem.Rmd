@@ -1,0 +1,54 @@
+# Advanced STEM Quick-Start Guide
+
+## Intro {-}
+
+Your goal is to use software to transform a text file that looks like the document on the left into a document that looks like the one on the right.
+
+::::{.figure-row}
+
+:::{.figure}
+```
+---
+title: Hello Math
+lang: en
+---
+
+Here is some math: $\frac{a}{b}$
+```
+[Markdown]{.figcaption}
+:::
+
+:::{.figure}
+
+{{iframe: src="html/hellomath_pretty.html" title="Hello_Math"}}
+
+[Rendered HTML]{.figcaption}
+:::
+
+::::
+
+The software that we use to get from the stuff on the left (*Markdown*) to the stuff on the right (rendered *HTML*) will work differently than a lot of applications, like web browsers. Instead of pressing buttons to do things, you'll open a window, type some words, and then click **Enter** to do things.
+
+
+::::: {.figure-row}
+
+:::: {.figure}
+!["A mouse clicking the bold button in Word."](image/wordbutton.jpg) [In Word, you press a button to perform an action, like make text bold.]{.figcaption}
+::::
+
+::::: {.figure}
+:::: {.video}
+::: {.source src="video/cmd.mp4" type="video/mp4"}
+Your browser does not support the video tag.
+:::
+::::
+[When using command line software, you type things then press **Enter** to perform an action.]{.figcaption}
+:::::
+ 
+:::::
+
+Specifically, you will use a program called *Pandoc* and you will type something like this to create the final HTML file:
+
+```.zsh
+pandoc file.md -s -d defaults.yaml -o  file.html
+```
