@@ -45,8 +45,8 @@ return {
       text_1 = text_1:gsub('“', '"'):gsub('”', '"'):gsub('‘', "'"):gsub('’', "'")
       local pattern = '{{iframe:%s*src%s*=%s*"([^"]+)"%s*title%s*=%s*"([^"]+)"}}'
       local src, title = text_1:match(pattern)
-      if #elem.content == 1 and elem.content[1].t == "Str" and elem.content[1].text == "{{hello_math_simple}}" then
-        return pandoc.CodeBlock(io.open("html/simple.html", "r"):read("*a"), {class="html"})
+      if #elem.content == 1 and elem.content[1].t == "Str" and elem.content[1].text == "{{hellomath_simple}}" then
+        return pandoc.CodeBlock(io.open("html/hellomath_simple.html", "r"):read("*a"), {class="html"})
       elseif src and title then
         local html = string.format(
           '<iframe src="%s" title="%s"></iframe>',

@@ -53,6 +53,34 @@ Specifically, you will use a program called *Pandoc* and you will type something
 pandoc file.md -s -d defaults.yaml -o  file.html
 ```
 
+## Workflow Overview
+
+HTML is generally considered a more accessible file format than PDF. We are going to start with PDF files and output (accessible) HTML files.
+
+When you visit a website in a web browser, you're viewing an HTML file. Opened in a text editor, an HTML file will look something like:
+
+{{hellomath_simple}}
+
+When the same file is opened with a web browser, the browser will "render" it as:
+
+
+:::::{.flex}
+
+::::{.figure}
+{{iframe: src="html/hellomath_simple.html" title="Hello_Math"}}
+
+:::{.figcaption}
+*An HTML file as rendered in a web browser. If a screen reader encounters an HTML file in a web browser, it can also provide audio descriptions of the text and navigate between elements.*
+:::
+
+::::
+
+:::::
+
+But we don't want to type out all those HTML tags (like `<head> . . . </head>`) by hand!
+
+Luckily, the problem of being able to write your own HTML without having to type all those pesky tags has been addressed many times before! We will use a program that converts Markdown, which is easy to write and easy to read, into HTML (not easy to write or read).
+
 ## Markdown
 
 ### Navigation {-}
