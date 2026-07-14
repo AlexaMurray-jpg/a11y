@@ -52,3 +52,95 @@ Specifically, you will use a program called *Pandoc* and you will type something
 ```.zsh
 pandoc file.md -s -d defaults.yaml -o  file.html
 ```
+
+## Markdown
+
+### Navigation {-}
+
+To correct the Markdown file, you may want to jump between elements of the same type in the file: from one heading to the next, or between math expressions.
+
+For some elements, like headings, you can do this via the outline panel. For other elements, you may need to search for the Markdown syntax characters in the "Find" box, but you will have to toggle on a setting called **Use Regular Expression** to do so.
+
+**Regular Expression Rules Table**
+
+
+| Inline Math   | Display Math | Heading | Image |
+|:-------------:|:------------:|:--------|:-----:|
+| ` \$`         | `\r?\n\$\$`  | `^#+ `  | `!\[` |
+
+:::{.det}
+[Display Math]{.summ}
+Display math is generally written on its own line and centered like:
+
+{{iframe: src="html/displaymath.html" title="Hello_Math"}}
+
+We will be writing display math in markdown files using the following notation:
+
+```
+
+$$\frac{a}{b}$$
+
+
+```
+
+[*surrounded by blank lines]{.small}
+
+To jump between (correctly written) display math expressions:
+
+1. Press **Ctrl** + **F**.
+2. Press **Alt** + **R** or click the .^*^ button.
+3. Type `\r?\n\$\$`
+4. Press ↑ or ↓.
+
+:::
+
+
+
+:::{.det}
+[Inline Math]{.summ}
+Inline math is written in line with text:
+
+{{iframe: src="html/inlinemath.html" title="Hello_Math"}}
+
+We will be writing display math in markdown files using the following notation:
+
+```
+lorem ipsum $\frac{a}{b}$ lorem ipsum
+```
+
+To jump between (correctly written) display math expressions:
+
+#. Press **Ctrl** + **F**.
+#. Press **Alt** + **R** or click the .^*^ button.
+#. Type ` \$`.
+#. Press ↑ or ↓.
+
+:::
+
+:::{.det}
+[Headings]{.summ}
+
+You can use the outline tool *or* search tool:
+
+#. Outline Tool
+    #. Click **OUTLINE** in the Explorer (lefthand sidebar).
+    #. Select any heading level to jump to that heading level.
+#. Search Tool
+    #. Press **Ctrl** + **F**.
+    #. Press **Alt** + **R** or click the .^*^ button.
+    #. Type `^#+ `.
+    #. Press ↑ or ↓.
+
+:::
+
+:::{.det}
+[Images]{.summ}
+
+You can use the outline tool *or* search tool:
+
+#. Press **Ctrl** + **F**.
+#. Press **Alt** + **R** or click the .^*^ button.
+#. Type `!\[`.
+#. Press ↑ or ↓.
+
+:::
