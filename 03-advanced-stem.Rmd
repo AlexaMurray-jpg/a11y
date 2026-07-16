@@ -53,7 +53,13 @@ Specifically, you will use a program called *Pandoc* and you will type something
 pandoc file.md -s -d defaults.yaml -o  file.html
 ```
 
-## Workflow Overview
+## TOC {-#as-toc}
+
+- \@ref(workflow-overview) [Workflow Overview](#workflow-overview)
+- \@ref(markdown) [Markdown](#markdown)
+    - \@ref(navigation) [Navigation](#navigation)
+
+## Workflow Overview {#workflow-overview}
 
 HTML is generally considered a more accessible file format than PDF. We are going to start with PDF files and output (accessible) HTML files.
 
@@ -81,9 +87,15 @@ But we don't want to type out all those HTML tags (like `<head> . . . </head>`) 
 
 Luckily, the problem of being able to write your own HTML without having to type all those pesky tags has been addressed many times before! We will use a program that converts Markdown, which is easy to write and easy to read, into HTML (not easy to write or read).
 
-## Markdown
+:::{.back-toc}
 
-### Navigation {-}
+[TOC](#as-toc)
+
+:::
+
+## Markdown {#markdown}
+
+### Navigation {#navigation}
 
 To correct the Markdown file, you may want to jump between elements of the same type in the file: from one heading to the next, or between math expressions.
 
@@ -121,8 +133,6 @@ To jump between (correctly written) display math expressions:
 4. Press ↑ or ↓.
 
 :::
-
-
 
 :::{.det}
 [Inline Math]{.summ}
@@ -164,11 +174,15 @@ You can use the outline tool *or* search tool:
 :::{.det}
 [Images]{.summ}
 
-You can use the outline tool *or* search tool:
-
 #. Press **Ctrl** + **F**.
 #. Press **Alt** + **R** or click the .^*^ button.
 #. Type `!\[`.
 #. Press ↑ or ↓.
+
+:::
+
+:::{.back-toc}
+
+[TOC](#as-toc)
 
 :::

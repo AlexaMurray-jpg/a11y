@@ -3,7 +3,7 @@ title: "a11y"
 author: "Lexi Murray"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: bookdown::gitbook::downcute
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
