@@ -148,7 +148,7 @@ To jump between (correctly written) display math expressions:
 
 1. Press **Ctrl** + **F**.
 2. Press **Alt** + **R** or click the .^*^ button.
-3. Type `\r?\n\$\$`
+3. Type `^\$\$`.
 4. Press ↑ or ↓.
 
 :::
