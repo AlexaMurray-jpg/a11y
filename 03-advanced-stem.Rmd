@@ -165,11 +165,11 @@ We will be writing display math in markdown files using the following notation:
 lorem ipsum $\frac{a}{b}$ lorem ipsum
 ```
 
-To jump between (correctly written) display math expressions:
+To jump between (correctly written) inline math expressions:
 
 #. Press **Ctrl** + **F**.
 #. Press **Alt** + **R** or click the .^*^ button.
-#. Type ` \$`.
+#. Type `\$[^\r?\n]+\$`.
 #. Press ↑ or ↓.
 
 :::
