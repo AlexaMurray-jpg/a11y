@@ -2,7 +2,12 @@
 
 ## Intro {-}
 
+:::{style="font-size:0.9rem; margin-top: -1em"}
+[Jump to TOC](#as-toc)
+:::
+
 Your goal is to use software to transform a text file that looks like the document on the left into a document that looks like the one on the right.
+
 
 ::::{.figure-row}
 
