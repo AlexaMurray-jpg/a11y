@@ -4,14 +4,19 @@
 Congrats! You found a hidden page.
 :::
 
-`\$[^\r?\n]+\$`{id="inline-math-reg"}
+`[^$]\$[^$]`{id="inline-math-reg"}
 
-: **inline math |** match one or more occurences of any non-linebreaking character when sandwiched between two dollar signs [⏎](#reg-ex-table)
+: **inline math |** match any occurrence of a dollar sign sandwiched between two non-dollar-sign characters; less helpful in documents with monetary values [⏎](#reg-ex-table)
+
+
+`[^\$]\$[^(\r?\n|\$)]+\$[^\$]`{id="inline-math-reg-alt"}
+
+: **inline math alternate |** match one or more occurrences of any non-linebreaking or dollar-sign characters when sandwiched between two dollar signs [⏎](#reg-ex-table)
 
 
 `^\$\$`{id="display-math-reg"}
 
-: **display math |** match any set of doubled dollar signs, when it occurrs at the start of a line [⏎](#reg-ex-table)
+: **display math |** match any set of doubled dollar signs, when it occurs at the start of a line [⏎](#reg-ex-table)
 
 
 `\$\$.+\$\$`{id="display-math-reg-alt"}

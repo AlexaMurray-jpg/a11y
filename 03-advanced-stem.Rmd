@@ -113,10 +113,15 @@ For the following rules, your Markdown must be correct if  you want them to work
 
 [**Regular Expression Rules Table**]{id="reg-ex-table"}
 
+::: {style="white-space:nowrap"}
 
-|             Inline Math             |      Display Math      |           Heading            |          Image       |
-|:-----------------------------------:|:----------------------:|:----------------------------:|:--------------------:|
-| [`\$[^\r?\n]+\$`](#inline-math-reg) | (ref:display-math-reg) | [`^#+ [*^\S]`](#heading-reg) | [`!\[`](#figure-reg) |
+|   Inline Math         |      Display Math      |           Heading            |       Image          |
+|:---------------------:|:----------------------:|:----------------------------:|:--------------------:|
+| (ref:inline-math-reg) | (ref:display-math-reg) | [`^#+ [*^\S]`](#heading-reg) | [`!\[`](#figure-reg) |
+
+:::
+
+(ref:inline-math-reg) [[[`[^$]\$[^$]`](#inline-math-reg)]{.summ}**Alternate:**`[^\$]\$[^(\r?\n|\$)]+\$[^\$]`]{.details}
 
 (ref:display-math-reg) [[[`^\$\$`](#display-math-reg)]{.summ}**Alternate:**`\$\$.+\$\$`]{.details}
 
@@ -146,7 +151,7 @@ To jump between (correctly written) inline math expressions:
 
 #. Press **Ctrl** + **F**.
 #. Press **Alt** + **R** or click the .^*^ button.
-#. Type `\$[^\r?\n]+\$`.
+#. Type `[^\$]\$[^(\r?\n|\$)]+\$[^\$]`.
 #. Press ↑ or ↓.
 
 :::
