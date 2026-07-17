@@ -63,6 +63,11 @@ return {
         result:extend(elem.content)
         result:insert(pandoc.RawInline('html', '</summary>'))
         return result
+      elseif elem.classes:includes("details") then
+        local result = pandoc.List({ pandoc.RawInline('html', '<details>') })
+        result:extend(elem.content)
+        result:insert(pandoc.RawInline('html', '</details>'))
+        return result
       elseif elem.classes:includes("figcaption") then
         local result = pandoc.List({ pandoc.RawInline('html', '<figcaption class="figcaption" style="font-size:1.35rem;">') })
         result:extend(elem.content)
