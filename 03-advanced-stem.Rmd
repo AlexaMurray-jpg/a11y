@@ -128,6 +128,27 @@ For the following rules, your Markdown must be correct if  you want them to work
 
 
 :::{.det}
+[Inline Math]{.summ}
+Inline math is written in line with text:
+
+{{iframe: src="html/inlinemath.html" title="Hello_Math"}}
+
+We will be writing display math in markdown files using the following notation:
+
+```
+lorem ipsum $\frac{a}{b}$ lorem ipsum
+```
+
+To jump between (correctly written) inline math expressions:
+
+#. Press **Ctrl** + **F**.
+#. Press **Alt** + **R** or click the .^*^ button.
+#. Type `\$[^\r?\n]+\$`.
+#. Press ↑ or ↓.
+
+:::
+
+:::{.det}
 [Display Math]{.summ}
 Display math is generally written on its own line and centered like:
 
@@ -150,27 +171,6 @@ To jump between (correctly written) display math expressions:
 2. Press **Alt** + **R** or click the .^*^ button.
 3. Type `^\$\$`.
 4. Press ↑ or ↓.
-
-:::
-
-:::{.det}
-[Inline Math]{.summ}
-Inline math is written in line with text:
-
-{{iframe: src="html/inlinemath.html" title="Hello_Math"}}
-
-We will be writing display math in markdown files using the following notation:
-
-```
-lorem ipsum $\frac{a}{b}$ lorem ipsum
-```
-
-To jump between (correctly written) inline math expressions:
-
-#. Press **Ctrl** + **F**.
-#. Press **Alt** + **R** or click the .^*^ button.
-#. Type `\$[^\r?\n]+\$`.
-#. Press ↑ or ↓.
 
 :::
 
