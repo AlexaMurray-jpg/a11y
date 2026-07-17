@@ -1,0 +1,29 @@
+# Regex Pattern Definitions {-#regex-pattern-def .unlisted}
+
+:::{.comment}
+Congrats! You found a hidden page.
+:::
+
+`\$[^\r?\n]+\$`{id="inline-math-reg"}
+
+: **inline math |** match one or more occurences of any non-linebreaking character when sandwiched between two dollar signs [⏎](#reg-ex-table)
+
+
+`^\$\$`{id="display-math-reg"}
+
+: **display math |** match any set of doubled dollar signs, when it occurrs at the start of a line [⏎](#reg-ex-table)
+
+
+`\$\$.+\$\$`{id="display-math-reg-alt"}
+
+: **display math alternate |** match any number of non-linebreaking characters when sandwiched between a set of doubled dollar signs [⏎](#reg-ex-table)
+
+
+`^#+ [*^\S]`{id="heading-reg"}
+
+: **headings |** match any number of pound signs at the start of a line when followed by a single space then one non-whitespace character [⏎](#reg-ex-table)
+
+
+`!\[`{id="figure-reg"}
+
+: **figure |** match an exclamation point followed by a left bracket [⏎](#reg-ex-table)
