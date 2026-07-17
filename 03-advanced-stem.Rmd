@@ -185,7 +185,7 @@ You can use the outline tool *or* search tool:
 #. Search Tool
     #. Press **Ctrl** + **F**.
     #. Press **Alt** + **R** or click the .^*^ button.
-    #. Type `^#+ `.
+    #. Type `^#+ [*^\S]`.
     #. Press ↑ or ↓.
 
 :::
