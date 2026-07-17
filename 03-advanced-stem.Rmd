@@ -106,12 +106,26 @@ To correct the Markdown file, you may want to jump between elements of the same 
 
 For some elements, like headings, you can do this via the outline panel. For other elements, you may need to search for the Markdown syntax characters in the "Find" box, but you will have to toggle on a setting called **Use Regular Expression** to do so.
 
-**Regular Expression Rules Table**
+For the following rules, your Markdown must be correct if  you want them to work. It is possible to make the pattern matching more forgiving. If you are an advanced user, feel free to adjust them as you see fit.
+
+[**Regular Expression Rules Table**]{id="reg-ex-table"}
 
 
-| Inline Math   | Display Math | Heading | Image |
-|:-------------:|:------------:|:--------|:-----:|
-| ` \$`         | `\r?\n\$\$`  | `^#+ `  | `!\[` |
+|             Inline Math             |      Display Math      |           Heading            |          Image       |
+|:-----------------------------------:|:----------------------:|:----------------------------:|:--------------------:|
+| [`\$[^\r?\n]+\$`](#inline-math-reg) | (ref:display-math-reg) | [`^#+ [*^\S]`](#heading-reg) | [`!\[`](#figure-reg) |
+
+(ref:display-math-reg) [[[`^\$\$`](#display-math-reg)]{.summ}**Alternate:**`\$\$.+\$\$`]{.details}
+
+
+:::{.small}
+*Microsoft Support Articles that may be helpful for VS Code Find and Replace:*
+
+- [*Microsoft Support | Regular Expressions in Visual Studio*](https://learn.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio?view=visualstudio)
+- [*Microsoft Support | VS Code Find and Replace*](https://code.visualstudio.com/docs/editing/codebasics#_advanced-find-and-replace-options)
+
+:::
+
 
 :::{.det}
 [Display Math]{.summ}
