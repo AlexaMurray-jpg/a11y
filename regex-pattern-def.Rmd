@@ -29,6 +29,8 @@ Congrats! You found a hidden page.
 : **headings |** match any number of pound signs at the start of a line when followed by a single space then one non-whitespace character [⏎](#reg-ex-table)
 
 
-`!\[`{id="figure-reg"}
+`!\[`{id="image-reg"}
 
-: **figure |** match an exclamation point followed by a left bracket [⏎](#reg-ex-table)
+: **image |** match an exclamation point followed by a left bracket 
+
+   <small>For a pattern like this, it may make more sense to just use the regular search, but you can extend this pattern if you wish. The important thing to note is the escape of the left bracket.</small>[⏎](#reg-ex-table)

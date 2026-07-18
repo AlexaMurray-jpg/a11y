@@ -107,23 +107,23 @@ Luckily, the problem of being able to write your own HTML without having to type
 
 To correct the Markdown file, you may want to jump between elements of the same type in the file: from one heading to the next, or between math expressions.
 
-For some elements, like headings, you can do this via the outline panel. For other elements, you may need to search for the Markdown syntax characters in the "Find" box, but you will have to toggle on a setting called **Use Regular Expression** to do so.
+For some elements, like headings, you can do this via the outline panel. For other elements, you may need to search for the Markdown syntax characters in the "Find" box, but you may improve results by toggling on a setting called **Use Regular Expression** to do so.
 
-For the following rules, your Markdown must be correct if  you want them to work. It is possible to make the pattern matching more forgiving. If you are an advanced user, feel free to adjust them as you see fit.
+The following is a table of basic regular expressions to search for different elements in your Markdown file. It is possible to make the pattern matching more forgiving. If you are an advanced user, feel free to adjust them as you see fit.
 
 [**Regular Expression Rules Table**]{id="reg-ex-table"}
 
 ::: {style="white-space:nowrap"}
 
-|   Inline Math         |      Display Math      |           Heading            |       Image          |
-|:---------------------:|:----------------------:|:----------------------------:|:--------------------:|
-| (ref:inline-math-reg) | (ref:display-math-reg) | [`^#+ [*^\S]`](#heading-reg) | [`!\[`](#figure-reg) |
+|[Inline Math](#inline-math-reg)|[Display Math](#display-math-reg)|[Heading](#heading-reg)| [Image](#image-reg)  |
+|:-----------------------------:|:-------------------------------:|:---------------------:|:--------------------:|
+| (ref:inline-math-reg) | (ref:display-math-reg) | `^#+ [*^\S]` | `!\[` |
 
 :::
 
-(ref:inline-math-reg) [[[`[^$]\$[^$]`](#inline-math-reg)]{.summ}**Alternate:**`[^\$]\$[^(\r?\n|\$)]+\$[^\$]`]{.details}
+(ref:inline-math-reg) [[`[^$]\$[^$]`]{.summ}**Alternate:**`[^\$]\$[^(\r?\n|\$)]+\$[^\$]`]{.details}
 
-(ref:display-math-reg) [[[`^\$\$`](#display-math-reg)]{.summ}**Alternate:**`\$\$.+\$\$`]{.details}
+(ref:display-math-reg) [[`^\$\$`]{.summ}**Alternate:**`\$\$.+\$\$`]{.details}
 
 
 :::{.small}
@@ -134,6 +134,7 @@ For the following rules, your Markdown must be correct if  you want them to work
 
 :::
 
+Below, find detailed descriptions of navigating between different elements in a Markdown file in VS Code. Each method has its own limitations and benefits.:
 
 :::{.det}
 [Inline Math]{.summ}
@@ -141,7 +142,7 @@ Inline math is written in line with text:
 
 {{iframe: src="html/inlinemath.html" title="Hello_Math"}}
 
-We will be writing display math in markdown files using the following notation:
+We will be writing display math in markdown files using the following notation.:
 
 ```
 lorem ipsum $\frac{a}{b}$ lorem ipsum
@@ -187,10 +188,15 @@ To jump between (correctly written) display math expressions:
 
 You can use the outline tool *or* search tool:
 
-#. Outline Tool
+- Outline Tool
     #. Click **OUTLINE** in the Explorer (lefthand sidebar).
     #. Select any heading level to jump to that heading level.
-#. Search Tool
+- Search Tool—Standard Search
+    #. Press **Ctrl** + **F**.
+    #. Press **Ctrl** + **Enter**.
+    #. Type `#`.
+    #. Press ↑ or ↓.
+- Search Tool—Regular Expression
     #. Press **Ctrl** + **F**.
     #. Press **Alt** + **R** or click the .^*^ button.
     #. Type `^#+ [*^\S]`.
