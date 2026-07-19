@@ -144,16 +144,23 @@ Inline math is written in line with text:
 
 We will be writing display math in markdown files using the following notation.:
 
-```
+```latex
 lorem ipsum $\frac{a}{b}$ lorem ipsum
 ```
 
 To jump between (correctly written) inline math expressions:
 
-#. Press **Ctrl** + **F**.
-#. Press **Alt** + **R** or click the .^*^ button.
-#. Type `[^\$]\$[^(\r?\n|\$)]+\$[^\$]`.
-#. Press ↑ or ↓.
+- Find Tool—Standard Search
+  #. Press **Ctrl** + **F**.
+  #. Type <code>&nbsp;$</code>.*
+  #. Press ↑ or ↓.
+  
+   <small>*This will only work when the inline math is directly preceded by a space.</small>
+- Find Tool—Regular Expression
+  #. Press **Ctrl** + **F**.
+  #. Press **Alt** + **R** or click the .^*^ button.
+  #. Type `[^\$]\$[^(\r?\n|\$)]+\$[^\$]`.
+  #. Press ↑ or ↓.
 
 :::
 
@@ -191,12 +198,12 @@ You can use the outline tool *or* search tool:
 - Outline Tool
     #. Click **OUTLINE** in the Explorer (lefthand sidebar).
     #. Select any heading level to jump to that heading level.
-- Search Tool—Standard Search
+- Find Tool—Standard Search
     #. Press **Ctrl** + **F**.
     #. Press **Ctrl** + **Enter**.
     #. Type `#`.
     #. Press ↑ or ↓.
-- Search Tool—Regular Expression
+- Find Tool—Regular Expression
     #. Press **Ctrl** + **F**.
     #. Press **Alt** + **R** or click the .^*^ button.
     #. Type `^#+ [*^\S]`.
