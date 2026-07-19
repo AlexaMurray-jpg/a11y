@@ -132,6 +132,8 @@ The following is a table of basic regular expressions to search for different el
 - [*Microsoft Support | Regular Expressions in Visual Studio*](https://learn.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio?view=visualstudio)
 - [*Microsoft Support | VS Code Find and Replace*](https://code.visualstudio.com/docs/editing/codebasics#_advanced-find-and-replace-options)
 
+All regex rules as provided are for the syntax of the advanced workflow, in which we use `$` as the math delimiter. LaTeX also allows `\(` and `\[` as the [delimiters](https://www.overleaf.com/learn/latex/Mathematical_expressions). If you feel comfortable with [Pandoc extensions](https://pandoc.org/demo/example33/8.21-non-default-extensions.html#extension-tex_math_single_backslash), you may use either.
+
 :::
 
 Below, find detailed descriptions of navigating between different elements in a Markdown file in VS Code. Each method has its own limitations and benefits.:
@@ -172,7 +174,7 @@ Display math is generally written on its own line and centered like:
 
 We will be writing display math in markdown files using the following notation:
 
-```
+```latex
 
 $$\frac{a}{b}$$
 
@@ -181,12 +183,22 @@ $$\frac{a}{b}$$
 
 [*surrounded by blank lines]{.small}
 
-To jump between (correctly written) display math expressions:
+To jump between display math expressions:
 
-1. Press **Ctrl** + **F**.
-2. Press **Alt** + **R** or click the .^*^ button.
-3. Type `^\$\$`.
-4. Press ↑ or ↓.
+- Find Tool—Standard Search 1
+   #. Press **Ctrl** + **F**.
+   #. Type `$$`.
+   #. Press ↑ or ↓.
+- Find Tool—Standard Search 2
+   #. Press **Ctrl** + **F**.
+   #. Press **Ctrl** + **Enter**.
+   #. Type `$$`.
+   #. Press ↑ or ↓.
+- Find Tool—Regular Expression
+   #. Press **Ctrl** + **F**.
+   #. Press **Alt** + **R** or click the .^*^ button.
+   #. Type `^\$\$`.
+   #. Press ↑ or ↓.
 
 :::
 
