@@ -103,6 +103,46 @@ Luckily, the problem of being able to write your own HTML without having to type
 
 ## Markdown {#markdown}
 
+### Math-Mode LaTeX
+
+In Markdown, including Pandoc Markdown, math is written with "math mode" LaTeX. This will often look like a backslash (`\`) followed by some text; the text is then sometimes followed by braces (`{}`). For example, the Greek letter lowercase gamma ($\gamma$) is written as `\gamma`, and the fraction $\frac{a}{b}$ is written as `\frac{a}{b}`, where the braces `{}` enclose the numerator and denominator. 
+
+However, software that processes files written in Markdown needs to know where the math begins and ends so it can process the math correctly. We use *delimiters* to mark the start and end of math in Markdown.
+
+The standard characters used as delimiters for math in Pandoc Markdown are dollar signs, a single dollar sign for **inline math** and doubled dollar signs for **display math**. (Using `\( . . . \)` for inline and `\[ . . .\]` is supported but requires an extension.)
+
+### Inline Math {-}
+
+Inline math is written in line with text:
+
+{{iframe: src="html/inlinemath.html" title="Hello_Math"}}
+
+We will be writing display math in markdown files using the following notation.:
+
+```latex
+lorem ipsum $\frac{a}{b}$ lorem ipsum
+```
+
+### Display Math {-}
+
+Display math is generally written on its own line and centered like:
+
+{{iframe: src="html/displaymath.html" title="Hello_Math"}}
+
+We will be writing display math in markdown files using the following notation:
+
+```latex
+
+$$\frac{a}{b}$$
+
+
+```
+
+::: {.small}
+*surrounded by blank lines
+:::
+
+
 ### Navigation {#navigation}
 
 To correct the Markdown file, you may want to jump between elements of the same type in the file: from one heading to the next, or between math expressions.
