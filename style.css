@@ -69,6 +69,15 @@ pre code {
   text-decoration: underline !important; /* better a11y */
 }
 
+.book .book-summary ul.summary li.active > a {
+  color:#0073D1; !important
+
+}
+
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+  color:#272735;!important
+}
+
 .book .book-body .page-wrapper .page-inner section.normal pre {
   background:black;
 }

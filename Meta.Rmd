@@ -103,5 +103,5 @@
 
 ## Maintenance
 
-- macro.lua
+- macro-filter.lua
 - style.css
