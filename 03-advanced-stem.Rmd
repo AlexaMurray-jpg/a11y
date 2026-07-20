@@ -24,14 +24,14 @@ lang: en
 
 Here is some math: $\frac{a}{b}$
 ```
-[Markdown]{.figcaption}
+[**Markdown |** Example filename: file.md]{.figcaption}
 :::
 
 :::{.figure}
 
 {{iframe: src="html/hellomath_pretty.html" title="Hello_Math"}}
 
-[Rendered HTML]{.figcaption}
+[**Rendered HTML |** Example filename: file.html]{.figcaption}
 :::
 
 ::::
