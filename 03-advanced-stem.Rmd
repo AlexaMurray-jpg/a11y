@@ -1,7 +1,11 @@
 # Advanced STEM Quick-Start Guide {#qs-as}
 
-:::{style="font-size:0.9rem; margin-top: -2em; margin-bottom: -2em"}
+:::{style="font-size:0.9rem; margin-top: -2em; margin-bottom: 0.5rem"}
 [Jump to TOC](#as-toc)
+:::
+
+::: {.small}
+[*(Syntax highlighting is currently a little jarring. Added for accessibility and to help beginners. Plans to adjust later.)*]{style="margin-top: 3rem"}
 :::
 
 ## Intro {-#intro-as}
@@ -12,7 +16,7 @@ Your goal is to use software to transform a text file that looks like the docume
 ::::{.figure-row}
 
 :::{.figure}
-```
+```markdown
 ---
 title: Hello Math
 lang: en

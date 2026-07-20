@@ -36,6 +36,9 @@ jobs:
       - name: Copy html assets into output
         run: cp -r html _book/html
 
+      - name: Copy synth theme into output
+        run: cp -r a11y.theme _book
+
       - name: Upload book as Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
