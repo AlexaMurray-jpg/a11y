@@ -294,3 +294,30 @@ You can use the outline tool *or* search tool:
 [TOC](#as-toc)
 
 :::
+
+## Pandoc Processing
+
+For now, you will place the file [STARS Pandoc Template](html/template.html) in your working directory and process your Markdown file `filename.md` with the command:
+
+::: {style='margin: 1rem'}
+```bash
+pandoc file.md -s --mathml --filter pandoc-crossref  -o  file.html  --template="template.html" --embed-resources --toc
+```
+:::
+
+That is, the above is the command you will type into your terminal in VS Code. 
+
+::: {.det}
+
+[Example]{.summ}
+
+As an example, if your file is named `dazzle.md`, then you would type
+
+```bash
+pandoc dazzle.md -s --mathml --filter pandoc-crossref  -o  dazzle.html  --template="template.html" --embed-resources --toc
+```
+:::
+
+**If you previously used starsMJ.txt and the `--mathjax` option, please stop and switch to this method. We want to use MathML with MathJax layered on top, not MathJax on its own.** Instead, open the above link to the STARS Pandoc template, and then save the page as template.html.
+
+*These instructions will change significantly in the coming weeks, so please check in regularly for updates.*
