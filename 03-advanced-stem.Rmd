@@ -69,6 +69,7 @@ pandoc file.md -s -d defaults.yaml -o  file.html
 
 - \@ref(workflow-overview) [Workflow Overview](#workflow-overview)
 - \@ref(markdown) [Markdown](#markdown)
+    - \@ref(installation) [Installation](#installation)
     - \@ref(navigation) [Navigation](#navigation)
 
 ## Workflow Overview {#workflow-overview}
@@ -98,6 +99,17 @@ When the same file is opened with a web browser, the browser will "render" it as
 But we don't want to type out all those HTML tags (like `<head> . . . </head>`) by hand!
 
 Luckily, the problem of being able to write your own HTML without having to type all those pesky tags has been addressed many times before! We will use a program that converts Markdown, which is easy to write and easy to read, into HTML (not easy to write or read).
+
+:::{.back-toc}
+
+[TOC](#as-toc)
+
+:::
+
+
+### Installation
+
+{{sconstruction}}
 
 :::{.back-toc}
 

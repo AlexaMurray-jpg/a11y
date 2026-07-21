@@ -79,9 +79,13 @@ return {
     end,
     Str = function (elem)
         if elem.text == "{{construction}}" then
-            return pandoc.Emph {pandoc.Str "This page is under construction."}
+            local elem_1 = pandoc.Span {pandoc.Emph {pandoc.Str "This page is under construction."}}
+            elem_1.attributes.class = 'box'
+            return elem_1
         elseif elem.text == "{{sconstruction}}" then
-            return pandoc.Emph {pandoc.Str "This section is under construction."}
+            local elem_1 = pandoc.Span {pandoc.Emph {pandoc.Str "This section is under construction."}}
+            elem_1.attributes.class = 'box'
+            return elem_1
         else
             return elem
         end
