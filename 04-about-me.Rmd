@@ -1,0 +1,53 @@
+# About Me
+
+Lexi (she/her/hers)
+
+My contributions to STARS:
+
+Creation of Team Slack
+
+: When I started STARS in 2023, technical remediation questions could only be adressed to GAAs and LGAAs via email and appointments, on the basis that questions were too individual to be addressed by a group. I proposed the creation of a team Slack, where questions could be brought to a group. This proposal was later adopted.
+
+Mathpix license
+
+: - licensing troubleshooting
+    - In August 2024, I did troubleshooting on licensing disparities prevented some students on STARS from being able to use the MathType license (our only math accessibility tool at the time) even if they were granted licensing privileges.
+  - MathML in Word
+    - To bypass this, I did math a11y research and brought information about spoken math engines, MathML, and MathML in Word to the team. This led to the adoption of Mathpix licensing.
+  - Mathpix How-To
+    - Once Mathpix was adopted, I brought training, instruction, and documentation to the team about how to use Mathpix (including using the MathML for Micrsoft Word option, how to use Notes, and how to use Mathpix to create accessible PDFs in Overleaf, and the limits of various Mathpix output options for a11y)
+
+Markdown to Accessible Outputs Workflow
+
+: From 2024 until August 2025, I developed and created a Markdown to accessible PDF/HTML workflow, which culminated in an R package for the workflow that also calculated color contrast, accessible color sets, and included an accessible syntax highlighting theme that I shared exclusively with STARS. The Markdown to accessible outputs workflow was adopted at the start of summer 2026.
+ 
+   *A history of the Markdown workflow to come.*
+
+NVDA testing
+
+: I brought NVDA testing into the workflow.
+
+Workflow
+
+: I brought the use of the term "workflow" to the STARS team.
+
+a11y
+
+: I brought the use of the term "a11y" to the STARS team.
+
+Accessible Math PDFs
+
+: I brought information about accessible math PDFs and the tagpdf package to the STARS team.
+
+Written Knowledge Base
+
+: In November 2025, I proposed the creation of a written knowledge base for STARS, which is currently being adopted and under construction (summer 2026).
+
+Video Clips Index
+
+: In November 2025, I proposed the creation of an index of short video clips to demonstrate common remediation issues, which has been adopted and is currently under construction.
+
+Ticket Tracking System
+
+: I proposed a ticket tracking system with dashboard to track class information stats to identify areas of training that most needed attention. This proposal was adopted and is currently under construction.
+
