@@ -37,7 +37,7 @@ a11y
 
 Accessible Math PDFs
 
-: I brought information about accessible math PDFs and the tagpdf package to the STARS team.
+: I brought information about accessible math PDFs and the tagpdf package to the STARS team, as well as general information about LaTeX.
 
 Written Knowledge Base
 
@@ -51,3 +51,18 @@ Ticket Tracking System
 
 : I proposed a ticket tracking system with dashboard to track class information stats to identify areas of training that most needed attention. This proposal was adopted and is currently under construction.
 
+NVDA Documentation and Testing
+
+: - Documentation on how to use NVDA.
+  - Documentation on how to use MathCAT in NVDA.
+  - Found and reported [NVDA error](https://github.com/daisy/MathCAT/issues/373) that would affect many users, which led to its resolution by the developer.
+
+::: {.comment}
+
+*Commenting out until I get confirmation.*
+
+GAA Check-Ins
+
+: I proposed proactive GAA group check-ins to help AAs get remediation assistance in advance of deadlines. This proposal may have been adopted.
+
+:::
