@@ -1,0 +1,11 @@
+# Creating Accessible PDFs
+
+In my opninion, the best way to create accessible math PDFs is via LaTeX, using the tagdf package.
+
+I prefer doing this through R Markdown, but if you are using straight LaTeX, one convenient way is combining Mathpix and Overleaf.
+
+Introduction to LaTeX
+
+: The best guide to LaTeX is [Overleaf](https://www.overleaf.com/learn).
+
+Overleaf supports TeX Live 2025, which means you can use the tagpdf package in it! Additionally, Mathpix integrates directly with Overleaf, so you can upload a PDF, export it to Overleaf, and add in the tagpdf invocation to output an accessible PDF.
