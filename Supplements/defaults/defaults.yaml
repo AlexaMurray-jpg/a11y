@@ -1,4 +1,3 @@
-# config.yaml
 standalone: true
 html-math-method: mathml
 template: "../templates/template.html"
@@ -9,17 +8,17 @@ toc: true
 metadata:
   linkcolor:
     'blue'
-  fontsize: 
+  fontsize:
     '14pt'
-  maxwidth: 
+  maxwidth:
     '95%'
-  toc-title: 
+  toc-title:
     'Contents'
-  nameInLink: 
+  nameInLink:
     true
-  chapters: 
+  chapters:
     false
-  chaptersDepth: 
+  chaptersDepth:
     3
   linkReferences:
     true
