@@ -1,0 +1,14 @@
+# Project Markdown
+
+Project Markdown is my workflow for creating accessible output documents from Markdown for STARS. It is a small project, but it is very important to me and the most important of all my [pet projects](#about-me) in STARS.
+
+Conservatively, I started this project in the winter of 2024 and the proposal was adopted at the end of Spring 2026, but like most projects its roots stretch out even before its official start. This is a history of this project.
+
+## Timeline of Project Markdown
+
+August '24 | Accessible Math Inquiry
+
+: In 2024, our only accessible math tool was MathType, used primarily in Word and if need be in Google Docs. Though we had a team license, licensing conflicts meant that the tool was still not available to all on the team. I did extensive troubleshooting to report on this licensing conflict and obtain information about digitally accessible math, even though we had no other documentation and our tools were unavailable to me. This is what led to the start of Project Markdown.
+  - **MathType Licensing Conflict** | At this point in time, Microsoft Word add-ins were not allowed for most undergraduate student Microsoft accounts, which meant that undergrad student would have had to change their emails to be Microsoft-provisioned rather than Google-provisioned to gain access to MathType—or make a personal Word purchase, which was not in-policy for the team. I found this information and brought it to the STARS team (part of what prompted the team to obtain a Mathpix license).
+  - **Math Alt Text Guidance** | The only guidance our team had on digitally accessible math at the time was either 1) to use MathType or 2) that alt text for math should sound more like "start fraction a plus gamma times . . . end fraction" than "a plus gamma . . ." This started my journey to find documentation on spoken math engines, and then navigable math.
+     - **MathType Alt Text** | MathType alt text was deeply nested in unintuitive image properties in Google Docs. 
