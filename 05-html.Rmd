@@ -1,0 +1,35 @@
+# HTML
+
+{{construction}}
+
+The ultimate guide to all things HTML, including accessibility, is [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML).
+
+When outputing HTML files, use semantic HTML. Use CSS for styling.
+
+CSS can easily be applied to spans and divs in Pandoc Markdown using curly braces:
+
+- ```markdown
+  <!-- div example -->
+  
+  ::: {style="color:blue"}
+  lorem ipsum
+  :::
+  ```
+  
+  results in 
+  
+  ::: {style="color:blue"}
+  lorem ipsum
+  :::
+
+- ```markdown
+  <!-- span example -->
+  
+  [lorem ipsum]{style="color:green"}
+  
+  ```
+  
+  results in
+  
+  [lorem ipsum]{style="color:green"}
+
