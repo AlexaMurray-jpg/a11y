@@ -336,8 +336,8 @@ pandoc nebula.md -s --mathml --filter pandoc-crossref  -o  nebula.html  --templa
    Save these files to the locations indicated in the next step.
    - [template.html](html/template.html)
    - [defaults.yaml](Supplements/defaults/defaults.yaml)
-   - [example.md](Supplements/templates/template.html)
-   - [filler.png](image/filler.png)
+   - [example.md](example/example.md)
+   - [filler.png](Supplements/templates/template.html)
 <br/><br/>
   
    To save:
