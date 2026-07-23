@@ -1,0 +1,27 @@
+# config.yaml
+standalone: true
+html-math-method: mathml
+template: "../templates/template.html"
+filters: [pandoc-crossref]
+embed-resources: true
+number-sections: false
+toc: true
+metadata:
+  linkcolor:
+    'blue'
+  fontsize: 
+    '14pt'
+  maxwidth: 
+    '95%'
+  toc-title: 
+    'Contents'
+  nameInLink: 
+    true
+  chapters: 
+    false
+  chaptersDepth: 
+    3
+  linkReferences:
+    true
+  preserveAltText:
+    false

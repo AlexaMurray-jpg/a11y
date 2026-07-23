@@ -69,6 +69,16 @@ pre code {
   margin: 2rem;
   background: #E6E6E6;
   border-radius: 15px;
+  color: black;
+}
+
+.warning-box {
+  color: black;
+  text-justify: auto;
+  padding: 1rem;
+  margin: 2rem;
+  background: #FF7A7A;
+  border-radius: 15px;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a {

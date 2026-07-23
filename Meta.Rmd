@@ -1,5 +1,7 @@
 # Meta
 
+This is a Bookdown GitBook site hosted on GitHub pages. With [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow), it serves as a wiki. However, I won't be accepting contributions until I have completed more of the site construction.
+
 ## Syntax {-}
 
 :::{.det}
@@ -102,6 +104,8 @@
 - `[msnip]: https://snip.mathpix.com/home  "Mathpix Snip Web App"`
 
 ## Maintenance
+
+*The syntax above is achieved at times through "hacks" (in the sense of being poorly constructed), so the below should not be reused.*
 
 - macro-filter.lua
 - style.css

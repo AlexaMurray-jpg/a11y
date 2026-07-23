@@ -7,6 +7,8 @@ libs/
 !**/mathjax_header.html
 !html/
 !html/*
+!Supplements/
+!Supplements/templates/*
 # R and Rstudio specific files
 .Rproj.user
 .Rhistory

@@ -12,7 +12,6 @@
 
 Your goal is to use software to transform a text file that looks like the document on the left into a document that looks like the one on the right.
 
-
 ::::{.figure-row}
 
 :::{.figure}
@@ -311,13 +310,142 @@ That is, the above is the command you will type into your terminal in VS Code.
 
 [Example]{.summ}
 
-As an example, if your file is named `dazzle.md`, then you would type
+As an example, if your file is named `nebula.md`, then you would type
 
 ```bash
-pandoc dazzle.md -s --mathml --filter pandoc-crossref  -o  dazzle.html  --template="template.html" --embed-resources --toc
+pandoc nebula.md -s --mathml --filter pandoc-crossref  -o  nebula.html  --template="template.html" --embed-resources --toc
 ```
 :::
 
-**If you previously used starsMJ.txt and the `--mathjax` option, please stop and switch to this method. We want to use MathML with MathJax layered on top, not MathJax on its own.** Instead, open the above link to the STARS Pandoc template, and then save the page as template.html.
+**If you previously used starsMJ.txt and the `--mathjax` option, please stop and switch to this method. We want to use MathML with MathJax layered on top, not MathJax on its own.** Instead, open the above link to the STARS Pandoc template, and then save the page as `template.html`.
 
 *These instructions will change significantly in the coming weeks, so please check in regularly for updates.*
+
+
+::: {.det}
+[**Advanced Method—Windows**]{.summ}
+
+{{backup}}
+
+<small>*Instructions assume Powershell as the VS Code terminal.*</small>
+
+#. Configuration Files
+
+   You will save two configuration files to your computer that will be used every time you convert Markdown to HTML, and one example Markdown file that is only being used to demonstrate the process.
+  
+   Save these files to the locations indicated in the next step.
+   - [template.html](html/template.html)
+   - [defaults.yaml](Supplements/defaults/defaults.yaml)
+   - [example.md](Supplements/templates/template.html)
+   - [filler.png](image/filler.png)
+<br/><br/>
+  
+   To save:
+   - Open each file in a new tab
+   - Right-click anywhere in the new tab
+   - Click **Save Page As**
+   - Navigate to the correct directory
+   - Change *Save as type* to **All Files**.
+   - Type the full filename, including the extension
+   - Click **Save**
+<br/><br/>
+
+#. Directory Setup
+   
+   Create the following directory structure in `Documents` of your current user profile:
+
+    ```
+    Documents/
+    ├── VS Code/
+        ├── STARS/
+            ├── Supplements/
+            |   ├── templates/
+            |   |   ├── template.html
+            |   └──defaults/
+            |       ├── defaults.yaml
+            └── Document 1/
+                ├── example.md
+                └── filler.png
+    ```
+    
+    You may disregard the STARS folder under Documents if you wish and you will only be using VS Code for STARS work.
+#. VS Code Setup
+
+   In VS Code:
+    #. Open the folder `Document 1`.
+    #. Optionally, open the file `example.md`
+    #. Open the terminal.
+<br/></br>
+
+#. File Processing
+
+   Then, in the terminal, use the command:
+    
+    ```powershell
+    $myFile='example'
+    pandoc "$myFile.md" -o '$myFile.html' -d defaults.yaml --data-dir "../Supplements"
+    ```
+    
+    <small>If you need to reprocess the same file while in the same session, only run the second line again. If you want to save multiple output versions, change `myFile.html` each time, or set that in a variable as well. The only part you need to change when you process a new file is the first line, to set the new filename.</small>
+    
+    <small>Remember not to include the file extension when setting `$myFile`.</small>
+    
+#. Make it Easier
+
+   ::: {.det}
+   
+   [Super Advanced Method]{.summ}
+   <small>*The following definitions assume you have used the above folder structure.*</small>
+   
+   <small>*This process makes the VS Code offshoot of the STARS markdown workflow easier, but **only** use it if you are certain you are comfortable with the process*</small>
+  
+   If you want to make this easier, you can store a Powershell function and alias  for said function in a Powershell profile, so that every time you process a file you only have to type `dazzle $myFile`.
+  
+   In VS Code:
+  
+    #. Install the [VS Code Powershell extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell).
+    
+    #. Create a VS Code Powershell profile:
+       #. In VS Code terminal, run the following:
+       
+       
+           ```powershell
+           code $PROFILE
+           ```
+    
+        #. Define a function `Remediate-File` and an alias `dazzle` for it:
+           
+           The last code opened a new temporary file in the VS Code editor. Type the following in this file, then press **Ctrl + S** to save.
+           
+           ```powershell
+           function Remediate-File {
+            pandoc "$myFile.md" -o "$myFile.html" --data-dir "../Supplements" -d "defaults.yaml"
+           }
+        
+           Set-Alias dazzle Remediate-File
+           ```
+    
+    #. Use the alias to remediate files.
+       
+       Now, whenever you want to remediate a file, open the working directory for that file, and then use a two-part process:
+       #. Place the filename (sans extension) in a variable.
+       
+          <small>*You can skip this step and just put the filename in place of the variable in the next step, but if you want to create multiple processing Powershell functions and test them on files with longer filenames (that you don't wish to change), this can be helpful.*</small>
+          
+          ```powershell
+          $myFile='FILENAME_GOES_HERE`
+          ```
+          
+          In the above, replace the characters FILENAME_GOES_HERE with the correct filename, leaving the quotes in-place.
+          
+       #. Process the file.
+       
+           <small>*Run the following command, exactly as written (no substitutions)*</small>
+           
+           
+          ```powershell
+          dazzle $myFile
+          ```
+   :::
+:::   
+
