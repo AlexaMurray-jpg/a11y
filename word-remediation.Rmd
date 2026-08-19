@@ -1,0 +1,325 @@
+# Word Remediation
+
+The type of file that you typically open in Microsoft Word is a DOCX file (it ends with the extension .docx). Although these files can be viewed, edited, and remediated in other applications[^1], we will call them Word documents and this documentation will focus on how to remediate them in Microsoft Word.
+
+These instructions can be used not only for remediating files that start as Word documents, but also for remediating files that start as PDFs but have certain complex document structures, difficult-to-correct errors, or require transcription.
+
+*When describing accessibility, this document will use a screen reader's speech function for examples demonstrating what digital accessibility is, because this is one of the lowest-learning-curve forms of assistive technology.*
+
+## Intro
+
+A basic Word document should have:
+
+- a "correct" heading structure
+- alternate text for images
+- tables with appropriate table structure
+- links with descriptive text
+- correctly nested lists
+- text with a high color contrast
+
+This is so that a screen reader can navigate between headings (sequentially and hierarchically), describe images, correctly navigate and describe tabular data, describe lists without reading full URLs, and navigate lists; and so that users with color blindness can see text/distinguish links from non-link text.
+
+Many of these features can be applied via Microsoft Word's built-in accessibility checker, the Accessibility Assistant, though it is generally important to do manual checks as well because some issues cannot be identified automatically.
+
+Because it is really easy to edit the contents of Word documents, you should pay close mind to pagination when remediating Word documents: when discussing files, an end user may wish to reference the page number of quotations, so it is important to use tools that will keep all content on the original page number.
+
+More complex Word documents may also require you to set the language for text, insert accessible math, confirm references and footnotes/endnotes, and edit or remove text boxes.
+
+
+## Use Cases
+
+Microsoft Word can be useful for remediating:
+
+- Word documents
+- PDFs with the following issues:
+  - scanned PDFs (require OCR) with warped/blurry text or many background markings
+  - many OCR errors
+  - many encoding errors
+  - complex document structure that is difficult to address in Acrobat
+    - example: many academic references (not always easier to address in Word)
+  - many language changes
+  - documents that require transcription
+  - documents that require heavy content manipulation
+
+## Set Heading Structure
+
+Every heading must be a real "heading" rather than just *looking* like a heading. In Word documents, this means the text must have one of the preset Heading styles applied. A sighted reader can easily skip between sections, based on the appearance of the headings. Assistive technology needs an equivalent, and having the semantic heading structure applied to text means a screen reader can jump from one heading to the next (skipping content in-between) or provide an outline structure (even in documents that don't contain outlines), allowing the end user to do the same form of navigation without any visual indicators.
+
+Additionally, these headings must have the correct rank (level of nesting) inidcated. For example, a section with a heading rank of 2 is a *subsection* of a section with heading rank 1, and a section with heading rank 3 is a *subsection* of a section with a heading rank 2. This document organization and structure is a part of how people visually navigate documents, and so this semantic information must also be available to screen readers.
+
+Because of the nature of nesting, when moving forward in a document heading ranks can either stay the same or jump up by any amount, but must always drill down by only 1. That means the progression $(1, 2, 2, 3, 4, 2)$ is okay, but $(1, 2, 2, 3, 4, 6)$ is not okay.
+
+Sometimes, if a document is poorly structured, it can be difficult to tell what the intended heading ranks are. In this case, you may need to skim the content, use your best judement, and potentially contact the document author. Documents typically carry up to ~5-6 heading ranks.
+
+### How-To
+
+To apply heading structure in Word, you should overview the heading structure via the Outline view, and then apply the correct heading structure via the *Styles* group of the Word ribbon.
+
+#### Evaluate Heading Stucture
+#. Click the **View** tab of the Word ribbon.
+#. Locate the *Views* group.
+#. Click **Outline**.
+#. Locate the *Outline Tools* group.
+#. Set *Show Level* to **Level 9**.
+#. Click into each heading and check the heading rank.
+
+#### Apply Heading Rank
+
+While still in Outline view with cursor in a given heading:
+
+#. Click **Close Outline View**.
+
+   *The cursor will remain in the given heading, even if in a different location than when you opened Outline view.*
+#. Click the **Home** tab of the Word ribbon.
+#. Locate the *Styles* group.
+#. Select the *Styles* dropdown.
+#. Hover over the Heading style with the correct rank.
+
+   *Don't use *Title, *which is skipped by screen readers.*
+#. Apply the heading.
+
+   - To keep the current styling, right-click the heading and select **Update Heading [#] to Match Selection.**
+   - To use the default setting styling, click the heading.
+
+## Apply Alternative Text
+
+Images that convey information (Example: chart or diagram) should have alternative text, so that a screen reader can describe the image reliably (AI image-description in AT exists, but we want a reliable, consistent, and human-verified description available).
+
+Images that are purely decorative should have the setting **Mark as decorative** applied so the screen reader won't read it.
+
+## Set Descriptive Link Text
+
+URLs are difficult to listen to and understand when read off literally, character-by-character. For this reason, we set descriptive text for each link that the screen reader can read in place of the URL.
+
+To do this:
+
+#. Right-click the URL.
+#. Select **Edit Hyperlink**.
+#. Change the text in the *Text to display:* field from the URL to a descriptive summary of the webpage.
+
+:::{.det}
+
+[Advanced]{.summ}
+   If unsure of which text to use, you can use the title of the webpage. When viewing the page source (option in the developer tab of major browsers), you can find the title by searching for `<title>` in the browser's find tool. The title will be the text TITLE_GOES_HERE in `<title>TITLE_GOES_HERE</title>`.
+
+:::
+
+## Color Contrast
+
+For regular body text, the text must have a high enough contrast with the document background. Additionally, the link color must meet a contrast threshold with non-link text, so it is easy to visually distinguish.
+
+Some text contrast errors can be detected by the Accessibility Assistant, but it cannot find text contrast errors when there is a shape with a fill color behind the text. For this reason, it is also important to do a manual check of text contrasts.
+
+Additionally, there are standards for image color contrast with informative graphics that apply to all file types, but fulfilling said threshold is beyond the scope of this page.
+
+### Text Contrast Via Accessibility Assistant
+
+#. Open the Accessibility Assistant
+   - Review Tab < Accessibility Group < **Check Accessibility**
+#. Click the text contrast error
+#. Select a color from the list of accessible color alternatives
+#. ::: {.det}
+   [Finish correcting contrast errors.]{.summ}
+   - If there are multiple text contrast errors, arrow through the errors (using **Next/Previous Issue**) and repeat the above steps for each.
+   - If any of the contrast errors are for links, skip them and correct through the Design tab instead. (Change color for both states.)
+   :::
+ #. Return to the main Accessibility Assistant using the AA **back** arrow.
+
+### Text Contrast—Manual Methods
+
+The Accessibility Assistant cannot find text contrast errors in the following cases:
+
+- Regular text with a shape (with fill color) behind it.
+- Text in a text box (without a text box fill color/with transparent fill color)
+
+In these cases, you will need to use manual methods to check the color contrast. In any case where a transparent color is used, you will (in practice) need to use a color picking tool to get the net color.
+
+#. Get text hex code.
+#. Paste text hex code in WebAIM Contrast Checker.
+#. :::{.det}
+   [Get background hex code.]{.summ}
+   Use one of the following methods:
+   - Document has a background color.
+     #. **Design** tab
+     #. **Page Color** (*Page Background* group)
+     #. **More Colors**
+     #. **Custom** tab
+     #. Copy the *Hex* field
+   - Text has a fill-shape behind it
+     #. Click the shape
+     #. **Shape Format** tab
+     #. **Shape Fill**
+     #. **More Fill Colors . . .**
+     #. **Custom** tab
+     #. Copy the *Hex* field
+   - Text box
+     - Text box with transparent fill
+       - Use a color picker
+     - Text box with no fill
+       - Use document background
+   :::
+#. Paste background hex code in WebAIM Contrast Checker.
+#. Adjust lightness sliders until WCAG thresholds are met.
+#. Copy the *Hex Value* field from WebAIM back into the relevant text color field in Word.
+
+### Link Contrast—Design Tab
+Links (generally) follow a theme: every link in the document gets a set of two colors, one for the unfollowed link state and one for the followed link state. When changing link colors, you should update the entire theme.
+
+#. Click the **Design** tab in the ribbon.
+#. In the *Document Formatting* Group, select **Colors**.
+#. At the bottom of the list of themes, select **Customize Colors**.
+#. ::: {.det}
+   [Check and correct *Hyperlink* color.]{.summ}
+   #. Near the bottom of the list of *Theme colors*, select the color next to *Hyperlink*.
+   #. Select **More Colors**.
+   #. Select the **Custom** tab.
+   #. Copy the "Hex code" (the set of 6 numbers and letters under the field *Hex*.)
+   #. Paste the Hex code into the *Link Color* field of the [WebAIM Link Contrast Checker](https://webaim.org/resources/linkcontrastchecker/).
+   #. Drag the lightness slider until the contrasts all meet WCAG thresholds.
+   #. Copy and paste the new Hex code into the *Hex* field of the *Colors* dialog box in Word.
+   #. Click **OK**.
+   #. Click **Save**.
+   :::
+#. ::: {.det}
+   [Check and correct *Followed Hyperlink* color.]{.summ}
+   #. Near the bottom of the list of *Theme colors*, select the color next to *Followed Hyperlink*.
+   #. Select **More Colors**.
+   #. Select the **Custom** tab.
+   #. Copy the "Hex code" (the set of 6 numbers and letters under the field *Hex*.)
+   #. Paste the Hex code into the *Link Color* field of the [WebAIM Link Contrast Checker](https://webaim.org/resources/linkcontrastchecker/).
+   #. Drag the lightness slider until the contrasts all meet WCAG thresholds.
+   #. Copy and paste the new Hex code into the *Hex* field of the *Colors* dialog box in Word.
+   #. Click **OK**.
+   #. Click **Save**.
+   :::
+
+Microsoft Word comes with a number of built-in document color themes. These themes preset various colors within the document. The above instructions assume that the remediator is only checking for a white background with black body text and do not account for the document dark mode option. To my knowledge, the colors listed when dark mode is enabled for the document are not listed in the themes. (Conclusion based on testing.)
+
+If it's okay to adjust the overall document theme, this is a table with the link contrast status of a few different built-in Office document themes:
+
+[olink]: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=467886 "Office Link Standard Theme"
+[olinkfollow]: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=96607D "Office Link Followed Standard Theme"
+
+[o7link]: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=0000FF&  "Office Link 07-10 Theme"
+[o7linkfollow]: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=800080 "Office Link Followed 07-10 Theme"
+
+[o13link]: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=0563C1 "Office Link 13-22 Theme"
+[o13linkfollow]: https://webaim.org/resources/linkcontrastchecker/?fcolor=000000&bcolor=FFFFFF&lcolor=954F72 "Office Link Followed 13-22 Theme"
+
++---------------+---------------+-------------------------------------------------+
+| Theme         | Status        | Notes                                           |
++:==============+:==============+:================================================+
+| Office        | accessible    | - [unfollowed state in light mode][olink]       |
+|               | links         | - [followed state in light mode][olinkfollow]   |
++---------------+---------------+-------------------------------------------------+
+| Office        | inaccessible  | - [unfollowed state in light mode][o7link]      |
+| 2007 - 2010   | links         | - [followed state in light mode][o7linkfollow]  |
++---------------+---------------+-------------------------------------------------+
+| Office        | accessible    | - [unfollowed state in light mode][o13link]     |
+| 2013 - 2022   | links         | - [followed state in light mode][o13linkfollow] |
++---------------+---------------+-------------------------------------------------+
+
+## Tables
+
+In Word, tables should have a header row and no merged cells. At times, this may require simplifiying the table: reorganizing the structure and even adding row and column names. (Complex table structures perform better in PDF, but are still recommended against by digital accessibility standards.)
+
+If a table uses text highlighting to convey information, you should add a note stating this in the caption. (Example: "Accessibility Annotation: Table uses text highlighting to convey information.") Screen readers are able to report text formatting, so the end user can switch this on for tables where it is necessary.
+
+## List Structure
+
+Similarly to headings, it is important to make sure that lists are actually lists, and not just a set of text with bullet points and appropriate indenting.
+
+### Verify Semantic List
+
+To confirm whether something that looks like a list is actually a list in Word:
+
+#. Click the **Home** tab in the Word ribbon.
+#. Click into one of the potential list items.
+#. Look at the *Paragraph* group.
+#. Check to see if one of the list options is highlighted.
+   - If it is, you're in luck! This is a real list. Now, you just have to verify the list structure.
+   - If not, you need to turn this into a list.
+
+### Verify List Structure
+
+If you suspect that a list structure is corrupted:
+
+#. Click the cursor into the list items.
+#. Select the dropdown next to the relevant list structure in the *Paragraph* group.
+#. Click **Change List Level**.
+#. Check which list level is selected. (This can be very difficult to see.)
+
+
+### Apply list structure
+
+## Math
+
+### Basic Mah
+
+For math that is not accessible in a Word document, take a snip using the Mathpix snipping tool and copy the MathML (MS Word) option.
+
+### Advanced Math
+
+You may also use **Insert** > **Equation** and use the Word symbols and structures, or type LaTeX or UnicodeMath into the equation box.(Make sure to check that Professional Mode is enabled when typing very simple math expressions, which could look similar in all three representations)
+
+To edit existing equations using LaTeX or UnicodeMath notation, switch on Linear Mode. Switch back to Profesisonal Mode when done. (It can be difficult to distinguish the two for some very simple math expressions, but for advanced ones the difference should be obvious.)
+
+## Reading Order
+
+## Setting Language
+
+When a document has words in a "foreign language", the language should be set so that the screen reader can announce the language, and possibly pronounce the words differently.
+
+## Validating References
+
+## Other Document Formatting
+
+A variety of other aspects of document formatting can affect accessibility.
+
+### Legible Fonts and Font Sizes
+
+#### Clear Formatting
+
+If text is too small or decorative (for example, loopy) to read, you may need to change the formatting. You can manually adjust the font size, and set the font to a standard, sans serif font; or, if the main body text has acceptable formatting, you can:
+
+#. Select the text that is hard to read.
+#. Click the **Home** tab.
+#. Locate the *Font* group.
+#. Click **Clear All Formatting**.
+
+### Maintaining Pagination
+
+In academic settings, people often reference page numbers during informal discussions. For this reason, it is important to maintain the original page numbers of content when remediating documents.
+
+(Additional accessibility structures can be added to the document by appending more pages at the *end* of the original content, but this should not interfere with the correspondance between the original content and page numbers.)
+
+If you want to shrink all selected text so that text fits on the same page as the original:
+
+#. Select all of the relevant text.
+#. Click the **Home** tab.
+#. Locate the *Font* group.
+#. Click **Decrease Font Size** (or **Increase Font Size** as needed).
+
+OR
+
+#. Select all of the relevant text.
+#. Click **Ctrl** + **[** to shrink the text.
+#. Click **Ctrl** + **]** to enlarge the text.
+
+### Vertical Whitespace
+
+Vertical whitespace (such as blank lines between paragraphs) should be whitespace only, not the result of newlines or invisible characters, because this makes screen reader navigation smoother.
+
+### Transcription Tools
+
+
+
+## Additional Reading
+
+- [Microsoft Support | Make your Word documents accessible to people with disabilities](https://support.microsoft.com/en-us/accessibility/word/make-your-word-documents-accessible-to-people-with-disabilities)
+- [Microsoft Support | Improve accessibility in your documents with the Accessibility Assistant](https://support.microsoft.com/en-us/accessibility/office-accessibility/improve-accessibility-in-your-documents-with-the-accessibility-assistant)
+- [Section508.gov | Module 10: Create Accessible Textboxes](https://www.section508.gov/training/documents/aed-cop-docx10/)
+
+
+
+[^1]: Open-source example: [LibreOffice](https://www.libreoffice.org/)
