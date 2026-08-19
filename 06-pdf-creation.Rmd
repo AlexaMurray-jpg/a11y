@@ -4,8 +4,70 @@ In my opninion, the best way to create accessible math PDFs is via LaTeX, using 
 
 I prefer doing this through R Markdown, but if you are using straight LaTeX, one convenient way is combining Mathpix and Overleaf.
 
+*Currently, Mathpix does not directly export PDFs with accessible math—neither the option **PDF (with HTML)** or **PDF (with LaTeX)** exports accessible math PDFs. (Testing; Mathpix support, personal communication 07/24/2026).*
+
 Introduction to LaTeX
 
 : The best guide to LaTeX is [Overleaf](https://www.overleaf.com/learn).
 
 Overleaf supports TeX Live 2025, which means you can use the tagpdf package in it! Additionally, Mathpix integrates directly with Overleaf, so you can upload a PDF, export it to Overleaf, and add in the tagpdf invocation to output an accessible PDF.
+
+A basic LaTeX file (example name: filename.tex) looks like this:
+
+```latex
+\documentclass{article}
+\begin{document}
+\section{Heading 1}
+Some text goes here.
+\end{document}
+```
+
+This file can then be converted to a PDF with the appropriate software (examples: TeX Live, MiKTeX, and TinyTeX). Historically, the \\documentclass{} declaration in the "preamble" has been the first line in a LaTeX file. However, with the creation of the tagpdf package (added to allow for the creation of accessible PDFs via LaTeX), there's a new first line on the scene: \\DocumentMetadata{}! Instead of including tagpdf in the preamble with a "\\usepackage{}" declaration, you include tagpdf by putting in the \\DocumentMetadata{} line at the very top:
+
+
+```latex
+DocumentMetadata()
+\documentclass{article}
+\begin{document}
+\section{Heading 1}
+Some text goes here.
+\end{document}
+```
+
+If you want to compile this to accessible PDF with local software, you'll need a full TeX Live (minimum version 2025) to do so. However, you can also do so in your browser with Overleaf, which is what we'll use for the demonstration.
+
+<!--
+:
+
+::: {.figure-row}
+
+iframe
+
+:::
+-->
+
+You might think you have to be a LaTeX aficionado to write up your LaTeX documents, but actually . . . Mathpix can do this for you! There is an "export to Overleaf" option that lets you export PDFs you OCR with Mathpix straight into Overleaf.
+
+<!--
+Let's take a look:
+
+::::: {.figure-row}
+
+::: {.figure}
+iframe
+[If Overleaf doesn't open automatically, make sure to allow popups from the site in your browser.]{.figcaption}
+:::
+
+:::::
+
+This will output a PDF with the math incorporated as both structure elements and as Associated Files.
+
+\pictureofaccessible.
+
+The following is the text of the speech viewer for NVDA when it reads from the PDF:
+
+> lorem
+
+Video Demonstration:
+
+-->
