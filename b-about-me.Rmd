@@ -68,3 +68,7 @@ GAA Check-Ins
 : I proposed proactive GAA group check-ins to help AAs get remediation assistance in advance of deadlines. This proposal may have been adopted.
 
 :::
+
+:::{.small}
+Experience: IT (10 years); leadership (7 years); social media (2 years); digital accessibility (5 years). Been working with HTML/CSS/Markdown for ~8 years, so if you have a question Slack me or request a training.
+:::
