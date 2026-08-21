@@ -1,5 +1,7 @@
 # Word Remediation
 
+{{construction}}
+
 The type of file that you typically open in Microsoft Word is a DOCX file (it ends with the extension .docx). Although these files can be viewed, edited, and remediated in other applications[^1], we will call them Word documents and this documentation will focus on how to remediate them in Microsoft Word.
 
 These instructions can be used not only for remediating files that start as Word documents, but also for remediating files that start as PDFs but have certain complex document structures, difficult-to-correct errors, or require transcription.
@@ -219,6 +221,101 @@ If it's okay to adjust the overall document theme, this is a table with the link
 | 2013 - 2022   | links         | - [followed state in light mode][o13linkfollow] |
 +---------------+---------------+-------------------------------------------------+
 
+**Theme colors:**
+
+:::{.det}
+[Office Theme colors]{.summ}
+
++---------------------------+---------------+
+| Text/Background - Dark 1  | #000000       |
++---------------------------+---------------+
+| Text/Background - Light 1 | #FFFFFF       |
++---------------------------+---------------+
+| Text/Background - Dark 2  | #0E2841       |
++---------------------------+---------------+
+| Text/Background - Light 2 | #E8E8E8       |
++---------------------------+---------------+
+| Accent 1                  | #156082       |
++---------------------------+---------------+
+| Accent 2                  | #E97132       |
++---------------------------+---------------+
+| Accent 3                  | #196B24       |
++---------------------------+---------------+
+| Accent 4                  | #0F9ED5       |
++---------------------------+---------------+
+| Accent 5                  | #A02B93       |
++---------------------------+---------------+
+| Accent 6                  | #4EA72E       |
++---------------------------+---------------+
+| Hyperlink                 | #467886       |
++---------------------------+---------------+
+| Hyperlink                 | #96607D       |
++---------------------------+---------------+
+:::
+
+
+:::{.det}
+[Office 2007 - 2010 Theme colors]{.summ}
+
++---------------------------+---------------+
+| Text/Background - Dark 1  | #000000       |
++---------------------------+---------------+
+| Text/Background - Light 1 | #FFFFFF       |
++---------------------------+---------------+
+| Text/Background - Dark 2  | #0E2841       |
++---------------------------+---------------+
+| Text/Background - Light 2 | #E8E8E8       |
++---------------------------+---------------+
+| Accent 1                  | #156082       |
++---------------------------+---------------+
+| Accent 2                  | #E97132       |
++---------------------------+---------------+
+| Accent 3                  | #196B24       |
++---------------------------+---------------+
+| Accent 4                  | #0F9ED5       |
++---------------------------+---------------+
+| Accent 5                  | #A02B93       |
++---------------------------+---------------+
+| Accent 6                  | #4EA72E       |
++---------------------------+---------------+
+| Hyperlink                 | #467886       |
++---------------------------+---------------+
+| Hyperlink                 | #96607D       |
++---------------------------+---------------+
+:::
+ 
+ 
+ 
+:::{.det}
+[Office 2013 - 2022 Theme colors]{.summ}
+
++---------------------------+---------------+
+| Text/Background - Dark 1  | #000000       |
++---------------------------+---------------+
+| Text/Background - Light 1 | #FFFFFF       |
++---------------------------+---------------+
+| Text/Background - Dark 2  | #1F497D       |
++---------------------------+---------------+
+| Text/Background - Light 2 | #EEECE1       |
++---------------------------+---------------+
+| Accent 1                  | #4F81BD       |
++---------------------------+---------------+
+| Accent 2                  | #C0504D       |
++---------------------------+---------------+
+| Accent 3                  | #9BBB59       |
++---------------------------+---------------+
+| Accent 4                  | #8064A2       |
++---------------------------+---------------+
+| Accent 5                  | #4BACC6       |
++---------------------------+---------------+
+| Accent 6                  | #F79646       |
++---------------------------+---------------+
+| Hyperlink                 | #0000FF       |
++---------------------------+---------------+
+| Hyperlink                 | #800080       |
++---------------------------+---------------+
+:::
+
 ## Tables
 
 In Word, tables should have a header row and no merged cells. At times, this may require simplifiying the table: reorganizing the structure and even adding row and column names. (Complex table structures perform better in PDF, but are still recommended against by digital accessibility standards.)
@@ -272,6 +369,10 @@ When a document has words in a "foreign language", the language should be set so
 
 ## Validating References
 
+## Text Boxes
+
+Text boxes can be made available to screen readers by setting them "in line with text"[^2], but this presents unideal navigation with screen readers[^3], so I recommend avoiding their use when possible. (Use standard body text, with formatting to make it appear the way you want it to.)
+
 ## Other Document Formatting
 
 A variety of other aspects of document formatting can affect accessibility.
@@ -310,7 +411,11 @@ OR
 
 Vertical whitespace (such as blank lines between paragraphs) should be whitespace only, not the result of newlines or invisible characters, because this makes screen reader navigation smoother.
 
+(Set via *Spacing* in Paragraph.)
+
+<!--
 ### Transcription Tools
+-->
 
 
 
@@ -323,3 +428,5 @@ Vertical whitespace (such as blank lines between paragraphs) should be whitespac
 
 
 [^1]: Open-source example: [LibreOffice](https://www.libreoffice.org/)
+[^2]: [Section 508 Accessible Text Boxes](https://www.section508.gov/training/documents/aed-cop-docx10/)
+[^3]: [Microsoft Support | Screen Readers and Text Boxes](https://support.microsoft.com/en-us/accessibility/word/use-a-screen-reader-to-select-and-read-text-boxes-and-images-in-word#access-text-inside-text-boxes)
