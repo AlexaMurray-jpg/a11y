@@ -2,7 +2,11 @@
 
 Lexi (she/her/hers)
 
-My contributions to STARS:
+My contributions:
+
+STC & Poorvu Collaboration
+
+: Worked with SAS, Poorvu, and STC to create a social media collaboration focused on lightweight assisstive technology how-tos; created STC digital accessibility guidelines, started accessible social media for STC. (2021)
 
 Creation of Team Slack
 
