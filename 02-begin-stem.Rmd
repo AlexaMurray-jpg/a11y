@@ -1,5 +1,7 @@
 # Beginner STEM—Quick Start Guide
 
+{{construction}}
+
 ## Intro {-}
 
 For the beginner STEM workflow, you will convert a math-heavy inaccessible PDF document into an accessible read-only Word document using Mathpix and Microsoft Office Word.
@@ -81,7 +83,7 @@ There are ways to correct the equations by using the equation editor in the Word
 
 ### Zoom-And-Snip
 
-When snipping indivdiual equations, zoom in as far as you can, and disregard the equation numbering—it's easy to add that back in with markup, even in Word.
+When snipping individual equations, zoom in as far as you can, and disregard the equation numbering—it's easy to add that back in with markup, even in Word.
 
 :::{.det}
 
