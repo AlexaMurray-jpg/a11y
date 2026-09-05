@@ -397,7 +397,7 @@ pandoc nebula.md -s --mathml --filter pandoc-crossref  -o  nebula.html  --templa
    [Super Advanced Method]{.summ}
    <small>*The following definitions assume you have used the above folder structure.*</small>
    
-   <small>*This process makes the VS Code offshoot of the STARS markdown workflow easier, but **only** use it if you are certain you are comfortable with the process*</small>
+   <small>*This process makes the VS Code offshoot of the STARS markdown workflow easier, but **only** use it if you are certain you are comfortable with the process.*</small>
   
    If you want to make this easier, you can store a Powershell function and alias  for said function in a Powershell profile, so that every time you process a file you only have to type `dazzle $myFile`.
   
