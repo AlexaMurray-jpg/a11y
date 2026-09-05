@@ -109,3 +109,25 @@ This is a Bookdown GitBook site hosted on GitHub pages. With [GitHub Flow](https
 
 - macro-filter.lua
 - style.css
+
+## Style Guide
+
+| Use |
+|:---:|
+| lorem ipsum Mathpix |
+| lorem ipsum Overleaf |
+| lorem ipsum Markdown |
+| lorem ipsum Pandoc |
+| lorem ipsum GitHub |
+| lorem ipsum VS Code|
+| lorem ipsum R Markdown |
+| lorem ipsum Bookdown |
+| lorem ipsum LaTeX |
+| lorem ipsum TeX |
+| lorem ipsum Jupyter Notebook | 
+| lorem ipsum Adobe Acrobat Pro|
+| lorem ipsum Adobe Acrobat Reader |
+| lorem ipsum OneDrive |
+| lorem ipsum TeX Live |
+| lorem ipsum MiKTeX |
+| 
