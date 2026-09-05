@@ -26,3 +26,40 @@ knitr::write_bib(c(
 a11y
 
 : digital accessibility
+
+This is a digital accessibility wiki that will focus on instructions for remediating academic files.
+
+## Digitally Accessible Documents
+
+If a document is digitally accessible, someone should be able to read it using assistive technology (*AT*), like a refreshable braille pad or screen reader. We will use screen readers for our examples, because that is one of the forms of AT with the lowest learning curves.
+
+A screen reader is software that reads aloud everything on a computer screen, whether menus and buttons or the contents of documents.
+
+For a screen reader to read documents, the files must be digitally accessible. The process of making files digitally accessible is called remediation.
+
+To better understand the remediation process, let's look at what a screen reader does with a digitally accessible document.
+
+- A sighted end-user can visually skim a document and understand how it is structured by looking at the appearance of the headings. That means screen reader software should have a way to navigate between headings, too!
+
+  In NVDA, you can jump between headings by using single-character keyboard shortcuts[^1] (**H** to jump to the next heading, or a number to jump to the next heading of the given level), or you can open the Elements List to find a list, or outline, of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
+
+- You can also jump to links (**K**), and when you do, you should hear a description of where the link goes, rather than just the URL.
+
+- In tables (**T** to jump), there are modes to always navigate to next cell (**Ctrl** + **←**/**→**) or to move to a neighboring cell of choice (**Ctrl** + **Alt** + **←**/**→**), but not go beyond the edge of the row when moving left or right.
+
+- Graphics require a text description that the screen reader can read out.
+
+- When you move to a list (**L**),  you can move from item to item, and determine the end of the list.
+
+- Math should make sense and be navigable.
+
+In general, these features should exist for the document in all file types.
+
+Not all documents are set up to work with assistive technology this way. This is where "remediation" comes in.
+
+You might have a Microsoft Word document where section headings have large, bolded font, but heading styles haven't been applied. To make this accessible, you would have to apply the heading styles; once you do, a screen reader will be able to "find" the headings, jump between them, and include them in the headings section of the Elements List.
+
+The task of document remediation is to take documents that are inaccessible and apply the correct features that will make it accessible. With simple documents, this is often a matter of knowing basic document editor features well (get ready to sharpen your Microsoft and Acrobat skills!), but there is also much to learn for more complex documents.
+
+[^1]: Called *input gestures*
+
