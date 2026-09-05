@@ -1,0 +1,20 @@
+# Accessible Outputs Via Mathpix
+
+You can use the following routes to create accessible outputs via Mathpix:
+
+- DOCX | export as Word document
+- HTML \ | export as HTML, after enabling export with MathML in settings
+- PDF \ \ \ | export to Overleaf, and add the tagpdf invocation; compile to PDF
+
+Or, you can use Markdown results from Mathpix to output multiple formats (PDF, HTML, EPUB, Word) at once.
+
+Mathpix snipping tool can OCR:
+
+- individual math equations/expressions
+- paragraphs containing numbers as currency, simple math, lists
+  - useful when you need correct unicode characters for simple math
+- tables
+- lists
+- chemical equations
+
+Mathpix can also convert entire documents.
