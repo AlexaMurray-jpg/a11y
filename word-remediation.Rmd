@@ -12,12 +12,12 @@ These instructions can be used not only for remediating files that start as Word
 
 A basic Word document should have:
 
-- a "correct" heading structure
-- alternate text for images
-- tables with appropriate table structure
-- links with descriptive text
-- correctly nested lists
-- text with a high color contrast
+- **Headings |** a "correct" heading structure
+- **Images |** alternate text for images
+- **Tables |** tables with header row, no merged cells
+- **Links |** links with descriptive text
+- **Lists |** correctly nested lists
+- **Text Color |** text with a high color contrast
 
 This is so that a screen reader can navigate between headings (sequentially and hierarchically), describe images, correctly navigate and describe tabular data, describe lists without reading full URLs, and navigate lists; and so that users with color blindness can see text/distinguish links from non-link text.
 
@@ -51,7 +51,7 @@ Additionally, these headings must have the correct rank (level of nesting) inidc
 
 Because of the nature of nesting, when moving forward in a document heading ranks can either stay the same or jump up by any amount, but must always drill down by only 1. That means the progression $(1, 2, 2, 3, 4, 2)$ is okay, but $(1, 2, 2, 3, 4, 6)$ is not okay.
 
-Sometimes, if a document is poorly structured, it can be difficult to tell what the intended heading ranks are. In this case, you may need to skim the content, use your best judement, and potentially contact the document author. Documents typically carry up to ~5-6 heading ranks.
+Sometimes, if a document is poorly structured, it can be difficult to tell what the intended heading ranks are. In this case, you may need to skim the content, use your best judement, and potentially contact the document author (*STARS: contact your GAA*). Documents typically carry up to ~5-6 heading ranks.
 
 ### How-To
 
