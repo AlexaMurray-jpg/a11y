@@ -2,7 +2,7 @@
 
 {{construction}}
 
-The type of file that you typically open in Microsoft Word is a DOCX file (it ends with the extension .docx). Although these files can be viewed, edited, and remediated in other applications[^1], we will call them Word documents and this documentation will focus on how to remediate them in Microsoft Word.
+The type of file that you typically open in Microsoft Word is a DOCX file (it ends with the extension .docx). Although these files can be viewed, edited, and remediated in other applications[^a], we will call them Word documents and this documentation will focus on how to remediate them in Microsoft Word.
 
 These instructions can be used not only for remediating files that start as Word documents, but also for remediating files that start as PDFs but have certain complex document structures, difficult-to-correct errors, or require transcription.
 
@@ -371,7 +371,7 @@ When a document has words in a "foreign language", the language should be set so
 
 ## Text Boxes
 
-Text boxes can be made available to screen readers by setting them "in line with text"[^2], but this presents unideal navigation with screen readers[^3], so I recommend avoiding their use when possible. (Use standard body text, with formatting to make it appear the way you want it to.)
+Text boxes can be made available to screen readers by setting them "in line with text"[^b], but this presents unideal navigation with screen readers[^c], so I recommend avoiding their use when possible. (Use standard body text, with formatting to make it appear the way you want it to.)
 
 ## Other Document Formatting
 
@@ -427,6 +427,6 @@ Vertical whitespace (such as blank lines between paragraphs) should be whitespac
 
 
 
-[^1]: Open-source example: [LibreOffice](https://www.libreoffice.org/)
-[^2]: [Section 508 Accessible Text Boxes](https://www.section508.gov/training/documents/aed-cop-docx10/)
-[^3]: [Microsoft Support | Screen Readers and Text Boxes](https://support.microsoft.com/en-us/accessibility/word/use-a-screen-reader-to-select-and-read-text-boxes-and-images-in-word#access-text-inside-text-boxes)
+[^a]: Open-source example: [LibreOffice](https://www.libreoffice.org/)
+[^b]: [Section 508 Accessible Text Boxes](https://www.section508.gov/training/documents/aed-cop-docx10/)
+[^c]: [Microsoft Support | Screen Readers and Text Boxes](https://support.microsoft.com/en-us/accessibility/word/use-a-screen-reader-to-select-and-read-text-boxes-and-images-in-word#access-text-inside-text-boxes)
