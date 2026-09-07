@@ -100,9 +100,9 @@ pre code {
 }
 
 /*likely a better way to do this; adjust later:*/
-
 .book .book-body .page-wrapper .page-inner section.normal pre,
 .book .book-body .page-wrapper .page-inner section.normal code {background:black; color:white}
+.book .book-body .page-wrapper .page-inner section.normal code.sourceCode.markdown {white-space:break-spaces}
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-comment,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-comment,
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-title,
