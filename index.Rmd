@@ -41,7 +41,7 @@ To better understand the remediation process, let's look at what a screen reader
 
 - A sighted end-user can visually skim a document and understand how it is structured by looking at the appearance of the headings. That means screen reader software should have a way to navigate between headings, too!
 
-  In NVDA, you can jump between headings by using single-character keyboard shortcuts[^1] (**H** to jump to the next heading, or a number to jump to the next heading of the given level), or you can open the Elements List to find a list, or outline, of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
+  In NVDA, you can jump between headings by using single-character keyboard shortcuts[^i_1] (**H** to jump to the next heading, or a number to jump to the next heading of the given level), or you can open the Elements List to find a list, or outline, of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
 
 - You can also jump to links (**K**), and when you do, you should hear a description of where the link goes, rather than just the URL.
 
@@ -59,7 +59,7 @@ Not all documents are set up to work with assistive technology this way. This is
 
 You might have a Microsoft Word document where section headings have large, bolded font, but heading styles haven't been applied. To make this accessible, you would have to apply the heading styles; once you do, a screen reader will be able to "find" the headings, jump between them, and include them in the headings section of the Elements List.
 
-The task of document remediation is to take documents that are inaccessible and apply the correct features that will make it accessible. With simple documents, this is often a matter of knowing basic document editor features well (get ready to sharpen your Microsoft and Acrobat skills!), but there is also much to learn for more complex documents.
+The task of document remediation is to take documents that are inaccessible and apply the correct features that will make it accessible. With simple documents, this is often a matter of knowing basic document editor features well (get ready to sharpen your Microsoft and Acrobat skills!), but there is also much to learn for complex documents.
 
-[^1]: Called *input gestures*
+[^i_1]: Called *input gestures*
 
