@@ -15,6 +15,7 @@ Your goal is to use software to transform a text file that looks like the docume
 ::::{.figure-row}
 
 :::{.figure}
+
 ```markdown
 ---
 title: Hello Math
@@ -23,6 +24,7 @@ lang: en
 
 Here is some math: $\frac{a}{b}$
 ```
+
 [**Markdown |** Example filename: file.md]{.figcaption}
 :::
 
@@ -118,11 +120,85 @@ Luckily, the problem of being able to write your own HTML without having to type
 
 ## Markdown {#markdown}
 
+:::{.det style="white-space:break-spaces"}
+
+[Pandoc Markdown Cheat Sheet]{.summ}
+
+:::{.figure}
+
+```markdown
+
+# Heading 1
+
+Headings start on a new line, and are marked by a pound sign followed by a space. The next character after the space is the start of the heading text. Headings should be followed by a blank line.
+
+This is a new paragraph.
+
+>To create a blockquote, use the greater-than sign and just keep typing. The blockquote will end wherever you put the line break (with "Enter"), but if you want to continue the blockquote in a new paragraph
+>
+>
+>just use greater-than signs to continue the blockquote.
+
+## Subheading 1
+
+Each time you step in to a new heading level, add another pound sign.
+
+To create a reference, place a unique set of letters and numbers after a caret and wrap it in brackets; we will use just the number 1 to keep it simple.[^1] See the note this references at the end of the Markdown.
+
+## Subheading 2
+
+When you get to an equation, use ("math mode") LaTeX. Wrap inline equations (written in the line of the text) in single dollar signs, like so: $\frac{3}{4}$. Wrap equations that take their own line ("display equations") in doubled dollar signs and place them on a new line, like so:
+
+$$\frac{3}{4}$$
+
+If you have an image, include it using:
+
+![Caption goes here.](Path/to/image.png){alt="Alt text goes here."}
+
+Note that you need a blank line after. You may leave the caption blank (not put any text between the brackets).
+
+Path/to means the "path" or address of the image. If the file is saved on your computer, that will be folder names separate by slashes; if the file is online, it will be some URL.
+
+*Italics* are created with single asterisks and **bolds** are created with double asterisks.
+
+Create bullet lists ("unordered lists") by starting a new line, and using a hypthen followed by a space for each bullet point. Create nested items by aligning the whitespace:
+
+- Item 1
+  - Sub-item 1
+- Item 2
+- Item 3
+
+Create numbered/lettered lists ("ordered lists") using a pound sign followed by a period then a space for each item; also create sub-items by aligning the whitespace:
+
+#. Item 1
+   #. Sub-item 1
+#. Item 2
+#. Item 3
+
+Links:
+
+[link text](www.example.com)
+
+To create a linked image, use the standard image syntax, and wrap that in brackets []. Place the destination for the link in parenthesis after this.
+
+[![image caption](path/to/example.png)](https://www.example.com/)
+
+[^1]: The note is created by using the same label (some unique text, in this case the number 1) preceded by a caret, with everything wrapped in brackets. This is a note rather than a reference though, so we follow it with a colon and a space before the note text.
+
+```
+
+[You can test this using the [Pandoc Online App](https://pandoc.org/app/). Select the **Hello world** example, then paste this in over the text "\*Hello\* world!" and convert. Don't use the web app to convert large loads, and don't paste in personal info or real files you are remediating. [^as_1] ]{.figcaption}
+
+:::
+
+
+:::
+
 ### Math-Mode LaTeX
 
-In Markdown, including Pandoc Markdown, math is written with "math mode" LaTeX. This will often look like a backslash (`\`) followed by some text; the text is then sometimes followed by braces (`{}`). For example, the Greek letter lowercase gamma ($\gamma$) is written as `\gamma`, and the fraction $\frac{a}{b}$ is written as `\frac{a}{b}`, where the braces `{}` enclose the numerator and denominator. 
+In Markdown, including Pandoc Markdown, math is written with "math mode" LaTeX. This will often look like a backslash (`\`) followed by some text; the text is then sometimes followed by braces (`{}`). For example, the Greek letter lowercase gamma ($\gamma$) is written as `\gamma`, and the fraction $\frac{a}{b}$ is written as `\frac{a}{b}`, where braces `{}` enclose both the numerator and denominator. 
 
-However, software that processes files written in Markdown needs to know where the math begins and ends so it can process the math correctly. We use *delimiters* to mark the start and end of math in Markdown.
+However, software that processes files written in Markdown needs to know where the math begins and ends so it can handle the math correctly. We use *delimiters* to mark the start and end of math in Markdown.
 
 The standard characters used as delimiters for math in Pandoc Markdown are dollar signs, a single dollar sign for **inline math** and doubled dollar signs for **display math**. (Using `\( . . . \)` for inline and `\[ . . .\]` is supported but requires an extension.)
 
@@ -449,3 +525,4 @@ pandoc nebula.md -s --mathml --filter pandoc-crossref  -o  nebula.html  --templa
    :::
 :::   
 
+[^as_1]: For more examples of Markdown, look at files ending in *.Rmd* in the code section for [this repository](https://github.com/AlexaMurray-jpg/a11y). To see the output, compare these files with the page of this site that has the same top heading. Note that I use some custom syntax. For additional help, see [Pandoc Markdown Syntax Documentation](https://pandoc.org/MANUAL.html#pandocs-markdown) **or** [Pandoc-Crossref Documentation](https://lierdakil.github.io/pandoc-crossref/) if you are using pandoc-crossref.
