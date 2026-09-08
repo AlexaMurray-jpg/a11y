@@ -111,6 +111,8 @@ When snipping individual equations, zoom in as far as you can, and disregard the
 
 You can switch into Linear Mode to correct the equation using either UnicodeMath or LaTeX, then switch back to Professional Mode. [Microsoft Support \| Linear format equations](https://support.microsoft.com/en-us/word/linear-format-equations-using-unicodemath-and-latex-in-word)
 
+
+
 #. Click into the equation box.
 
     A new Equations tab will appear in the Word ribbon.
@@ -123,8 +125,8 @@ You can switch into Linear Mode to correct the equation using either UnicodeMath
 #. Convert the equation back to Professional mode.
     #. Click the dropdown arrow on the right of the equation box.
     #. Select **Professional**.
-
-[Example Linear Mode Correction](https://youtu.be/wIC0EhO3iSE)
+    
+<iframe src="https://www.youtube.com/embed/wIC0EhO3iSE" title="Linear Mode Demo"></iframe>
 
 :::{.comment}
 
