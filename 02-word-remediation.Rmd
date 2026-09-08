@@ -43,7 +43,7 @@ Microsoft Word can be useful for remediating:
   - documents that require transcription
   - documents that require heavy content manipulation
 
-## Set Heading Structure
+## Set Heading Structure {.unlisted .unnumbered}
 
 Every heading must be a real "heading" rather than just *looking* like a heading. In Word documents, this means the text must have one of the preset Heading styles applied. A sighted reader can easily skip between sections, based on the appearance of the headings. Assistive technology needs an equivalent, and having the semantic heading structure applied to text means a screen reader can jump from one heading to the next (skipping content in-between) or provide an outline structure (even in documents that don't contain outlines), allowing the end user to do the same form of navigation without any visual indicators.
 
