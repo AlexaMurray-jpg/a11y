@@ -49,11 +49,14 @@ A screen reader is software that reads aloud everything on a computer screen, wh
 
 For a screen reader to read documents, the files must be digitally accessible. The process of making files digitally accessible is called remediation.
 
-To better understand the remediation process, let's look at what a screen reader does with a digitally accessible document.
+To better understand the remediation process, let's look at what a screen reader *does* with a digitally accessible document.
 
-- A sighted end-user can visually skim a document and understand how it is structured by looking at the appearance of the headings. That means screen reader software should have a way to navigate between headings, too!
-
-  In NVDA, you can jump between headings by using single-character keyboard shortcuts[^i_1] (**H** to jump to the next heading, or a number to jump to the next heading of the given level), or you can open the Elements List to find a list, or outline, of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
+- In NVDA, you can move straight from one heading to the next headings by: 
+  
+  - using single-character keyboard shortcuts[^i_1] (**H** to jump to the next heading, or a number to jump to the next heading of the given level), 
+  - or pening the Elements List to find an outline of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
+  
+  <small>*Why?* A sighted end-user can visually skim a document and understand how it is structured by looking at the appearance of the headings. That means screen reader software should have a way to navigate between headings, too! </small>
 
 - You can also jump to links (**K**), and when you do, you should hear a description of where the link goes, rather than just the URL.
 
