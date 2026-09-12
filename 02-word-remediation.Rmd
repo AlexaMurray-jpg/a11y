@@ -58,6 +58,7 @@ Sometimes, if a document is poorly structured, it can be difficult to tell what 
 To apply heading structure in Word, you should overview the heading structure via the Outline view, and then apply the correct heading structure via the *Styles* group of the Word ribbon.
 
 #### Evaluate Heading Stucture
+
 #. Click the **View** tab of the Word ribbon.
 #. Locate the *Views* group.
 #. Click **Outline**.
@@ -83,13 +84,13 @@ While still in Outline view with cursor in a given heading:
    - To keep the current styling, right-click the heading and select **Update Heading [#] to Match Selection.**
    - To use the default setting styling, click the heading.
 
-## Apply Alternative Text
+## Apply Alternative Text {.unlisted .unnumbered}
 
 Images that convey information (Example: chart or diagram) should have alternative text, so that a screen reader can describe the image reliably (AI image-description in AT exists, but we want a reliable, consistent, and human-verified description available).
 
 Images that are purely decorative should have the setting **Mark as decorative** applied so the screen reader won't read it.
 
-## Set Descriptive Link Text
+## Set Descriptive Link Text {.unlisted .unnumbered}
 
 URLs are difficult to listen to and understand when read off literally, character-by-character. For this reason, we set descriptive text for each link that the screen reader can read in place of the URL.
 
@@ -106,7 +107,7 @@ To do this:
 
 :::
 
-## Color Contrast
+## Color Contrast {.unlisted .unnumbered}
 
 For regular body text, the text must have a high enough contrast with the document background. Additionally, the link color must meet a contrast threshold with non-link text, so it is easy to visually distinguish.
 
@@ -316,13 +317,13 @@ If it's okay to adjust the overall document theme, this is a table with the link
 +---------------------------+---------------+
 :::
 
-## Tables
+## Tables {.unlisted .unnumbered}
 
 In Word, tables should have a header row and no merged cells. At times, this may require simplifiying the table: reorganizing the structure and even adding row and column names. (Complex table structures perform better in PDF, but are still recommended against by digital accessibility standards.)
 
 If a table uses text highlighting to convey information, you should add a note stating this in the caption. (Example: "Accessibility Annotation: Table uses text highlighting to convey information.") Screen readers are able to report text formatting, so the end user can switch this on for tables where it is necessary.
 
-## List Structure
+## List Structure {.unlisted .unnumbered}
 
 Similarly to headings, it is important to make sure that lists are actually lists, and not just a set of text with bullet points and appropriate indenting.
 
@@ -349,9 +350,9 @@ If you suspect that a list structure is corrupted:
 
 ### Apply list structure
 
-## Math
+## Math {.unlisted .unnumbered}
 
-### Basic Mah
+### Basic Math
 
 For math that is not accessible in a Word document, take a snip using the Mathpix snipping tool and copy the MathML (MS Word) option.
 
@@ -359,25 +360,25 @@ For math that is not accessible in a Word document, take a snip using the Mathpi
 
 You may also use **Insert** > **Equation** and use the Word symbols and structures, or type LaTeX or UnicodeMath into the equation box.(Make sure to check that Professional Mode is enabled when typing very simple math expressions, which could look similar in all three representations)
 
-To edit existing equations using LaTeX or UnicodeMath notation, switch on Linear Mode. Switch back to Profesisonal Mode when done. (It can be difficult to distinguish the two for some very simple math expressions, but for advanced ones the difference should be obvious.)
+To edit existing equations using LaTeX or UnicodeMath notation, switch on Linear Mode. Switch back to Professional Mode when done. (It can be difficult to distinguish the two for some very simple math expressions, but for advanced ones the difference should be obvious.)
 
-## Reading Order
+## Reading Order {.unlisted .unnumbered}
 
-## Setting Language
+## Setting Language {.unlisted .unnumbered}
 
 When a document has words in a "foreign language", the language should be set so that the screen reader can announce the language, and possibly pronounce the words differently.
 
-## Validating References
+## Validating References {.unlisted .unnumbered}
 
-## Text Boxes
+## Text Boxes {.unlisted .unnumbered}
 
 Text boxes can be made available to screen readers by setting them "in line with text"[^wr_2], but this presents unideal navigation with screen readers[^wr_3], so I recommend avoiding their use when possible. (Use standard body text, with formatting to make it appear the way you want it to.)
 
-## Other Document Formatting
+## Other Document Formatting {.unlisted .unnumbered}
 
 A variety of other aspects of document formatting can affect accessibility.
 
-### Legible Fonts and Font Sizes
+### Legible Fonts and Font Sizes {.unlisted .unnumbered}
 
 #### Clear Formatting
 
@@ -407,7 +408,7 @@ OR
 #. Click **Ctrl** + **[** to shrink the text.
 #. Click **Ctrl** + **]** to enlarge the text.
 
-### Vertical Whitespace
+### Vertical Whitespace {.unlisted .unnumbered}
 
 Vertical whitespace (such as blank lines between paragraphs) should be whitespace only, not the result of newlines or invisible characters, because this makes screen reader navigation smoother.
 
@@ -419,7 +420,7 @@ Vertical whitespace (such as blank lines between paragraphs) should be whitespac
 
 
 
-## Additional Reading
+## Additional Reading {.unlisted .unnumbered}
 
 - [Microsoft Support | Make your Word documents accessible to people with disabilities](https://support.microsoft.com/en-us/accessibility/word/make-your-word-documents-accessible-to-people-with-disabilities)
 - [Microsoft Support | Improve accessibility in your documents with the Accessibility Assistant](https://support.microsoft.com/en-us/accessibility/office-accessibility/improve-accessibility-in-your-documents-with-the-accessibility-assistant)
