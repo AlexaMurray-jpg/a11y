@@ -51,10 +51,10 @@ For a screen reader to read documents, the files must be digitally accessible. T
 
 To better understand the remediation process, let's look at what a screen reader *does* with a digitally accessible document.
 
-- In NVDA, you can move straight from one heading to the next headings by: 
+- In NVDA, you can move straight from one heading to the next by: 
   
   - using single-character keyboard shortcuts[^i_1] (**H** to jump to the next heading, or a number to jump to the next heading of the given level), 
-  - or pening the Elements List to find an outline of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
+  - or opening the Elements List to find an outline of all the headings in the document. The Elements List is available in all documents that have headings, whether Word or HTML or PDF files.
   
   <small>*Why?* A sighted end-user can visually skim a document and understand how it is structured by looking at the appearance of the headings. That means screen reader software should have a way to navigate between headings, too! </small>
 
