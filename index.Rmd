@@ -29,6 +29,18 @@ a11y
 
 This is a digital accessibility wiki that will focus on instructions for remediating academic files.
 
+:::::{.figure-row}
+
+:::{.figure}
+
+<iframe src="https://youtube.com/embed/xJk55tfS0H8" title="Digital Accessibility Intro" style="width:100%; height=100%"></iframe>
+
+[*Learn what a digitally accessible document is, and how to make one.*]{.figcaption}
+
+:::
+
+:::::
+
 ## Digitally Accessible Documents
 
 If a document is digitally accessible, someone should be able to read it using assistive technology (*AT*), like a refreshable braille pad or screen reader. We will use screen readers for our examples, because that is one of the forms of AT with the lowest learning curves.
