@@ -29,6 +29,8 @@ a11y
 
 This is a digital accessibility wiki that will focus on instructions for remediating academic files.
 
+The process of making an inaccessible document digitally accessible is called remediation.
+
 :::::{.figure-row}
 
 :::{.figure}
