@@ -10,6 +10,18 @@ These instructions can be used not only for remediating files that start as Word
 
 ## Intro
 
+:::::{.figure-row}
+
+:::{.figure}
+
+<iframe width="100%" src="https://www.youtube.com/embed/fia-Sbst9mU?si=O84dY7nHOOqT-fnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[*Learn the basics of making accessible documents in Microsoft Office Word.*]{.figcaption}
+
+:::
+
+:::::
+
 A basic Word document should have:
 
 - **Headings |** a "correct" heading structure
