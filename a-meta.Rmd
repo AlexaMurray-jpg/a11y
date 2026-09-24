@@ -130,4 +130,12 @@ This is a Bookdown GitBook site hosted on GitHub pages. With [GitHub Flow](https
 | lorem ipsum OneDrive |
 | lorem ipsum TeX Live |
 | lorem ipsum MiKTeX |
-| 
+| lorem ipsum alt text |
+| lorem ipsum alternative text[^m_1] |
+| lorem ipsum endnote |
+| lorem ipsum **Clickable Button Name** |
+| lorem ipsum *Non-clickable UI Component Nam * |
+| lorem ipsum **Ctrl** + **Alt** + **Right Arrow** |
+| lorem ipsum **Ctrl** + **A** |
+
+[^m_1]: As opposed to *alternate text*.
