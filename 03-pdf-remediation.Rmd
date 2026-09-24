@@ -1,0 +1,31 @@
+# PDF Remediation
+
+{{construction}}
+
+## Intro
+
+***Warning: Always look for encoding errors in the Accessibility Check before proceeding with remediation—if these exist, you may want to rebuild the PDF in MS Word, or through other means.***
+
+:::::{.figure-row}
+
+:::{.figure}
+
+<iframe width="100%" src="https://www.youtube.com/embed/aHBkV0ySGFw?si=6pxK9-kW5b_LDoy5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[*Learn Acrobat OCR: Using Adobe Acrobat to turn *pictures *of text into text.*]{.figcaption}
+
+:::
+
+:::::
+
+:::::{.figure-row}
+
+:::{.figure}
+
+<iframe width="100%" src="https://www.youtube.com/embed/QbREUquSCTk?si=jrBtDEF8aAW-weNm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[*Learn the basics of making accessible PDF documents in Adobe Acrobat Pro.*]{.figcaption}
+
+:::
+
+:::::
