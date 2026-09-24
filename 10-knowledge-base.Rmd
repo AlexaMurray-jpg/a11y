@@ -58,46 +58,33 @@ Export An Image from a PDF
   
 ### Microsoft Office Word
 
-<dl>
+Add a Math Expression
+  : Paste in MathML from Mathpix.
+    
+    #. Open the Mathpix Desktop App.
+    #. Take a snip using the snipping tool.
+    #. Copy *MathML (Ms Word)* from the **Data** tab.
+    #. Paste anywhere in the Word document.
+        - You do not need to insert an empty equation first; just place your cursor anywhere before pasting.
 
-<dt> Add a Math Expression </dt>
-
-<dd>
-
-Paste in MathML from Mathpix.
-
-#. Open the Mathpix Desktop App.
-#. Take a snip using the snipping tool.
-#. Copy *MathML (Ms Word)* from the **Data** tab.
-#. Paste anywhere in the Word document.
-    - You do not need to insert an empty equation first; just place your cursor anywhere before pasting.
-
-</dd>
-
-<dd>
-
-Use the Word ribbon.
-
-#. From **Home** tab, choose **Insert** > **Equation**.
-#. A new tab, **Equation** appears. From this tab:
-   - Add mathematical symbols.
-   - Add mathematical structures.
-     <br><small>*Example: an exponent, with an empty placeholder in the base and empty placeholder in the exponent.*</small>
-   - Fill structures with mathematical symbols.
-   - Type math using LaTex or UnicodeMath.
-     #. Select input method (LaTeX or UnicodeMath) from the ribbon.
-     #. Type the math using LaTeX or UnicodeMath in empty equation placeholder boxes.
-        <br><small>*Once you navigate out of the math equation box, it will automatically convert to the type of math we want.*</small>
-   - Correct math using Linear Mode.
-     #. Select input method (LaTeX or UnicodeMath) from the ribbon.
-     #. Siwtch to Linear Mode using the three-dot menu on the equation box.
-     #. Edit the math by typing LaTeX or UnicodeMath.
-     #. Switch back to Professional Mode using the three-dot menu on the equation box.
-        <br><small>*Linear Mode can also be used to display LaTeX or UnicodeMath syntax, when that is the end goal for a document.*</small>
-        
-</dd>
-
-</dl>
+  : Use the Word ribbon.
+    
+    #. From **Home** tab, choose **Insert** > **Equation**.
+    #. A new tab, **Equation** appears. From this tab:
+       - Add mathematical symbols.
+       - Add mathematical structures.
+         <br><small>*Example: an exponent, with an empty placeholder in the base and empty placeholder in the exponent.*</small>
+       - Fill structures with mathematical symbols.
+       - Type math using LaTex or UnicodeMath.
+         #. Select input method (LaTeX or UnicodeMath) from the ribbon.
+         #. Type the math using LaTeX or UnicodeMath in empty equation placeholder boxes.
+            <br><small>*Once you navigate out of the math equation box, it will automatically convert to the type of math we want.*</small>
+       - Correct math using Linear Mode.
+         #. Select input method (LaTeX or UnicodeMath) from the ribbon.
+         #. Siwtch to Linear Mode using the three-dot menu on the equation box.
+         #. Edit the math by typing LaTeX or UnicodeMath.
+         #. Switch back to Professional Mode using the three-dot menu on the equation box.
+            <br><small>*Linear Mode can also be used to display LaTeX or UnicodeMath syntax, when that is the end goal for a document.*</small>
   
 ## Tech: What-To
 
@@ -200,7 +187,7 @@ General Solution:
     
       Directed To   Weight
       ------------- --------
-      4             25
+      4             25s
 
          
          
@@ -220,5 +207,3 @@ Music Score
     - Tools for creating talking scores may be limited currently.
 
 </dl>
-
-
