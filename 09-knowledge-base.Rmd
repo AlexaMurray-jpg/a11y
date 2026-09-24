@@ -1,5 +1,6 @@
 # Knowledge Base
-<small>(*Mini Knowledge Base*)</small>
+
+[*Mini Knowledge Base*[^kb_1]]{.small}
 
 A collection of known solutions for remediation issues we regularly encounter in document remediation!
 
@@ -55,6 +56,17 @@ Export An Image from a PDF
      *(Will be highlighted in blue.)*
   #. Right-click the image.
   #. Choose **Save image as** from the context menu.
+  
+Export PDF Pages as Images
+
+: *Useful for corrupted PDFs, PDFs with many text errors: allows you to cleanly rerun OCR.*
+
+  #. All tools.
+  #. Export a PDF.
+  #. Image Format.
+  #. Settings gear.
+  #. Second-highest resolution.
+  #. Convert to PNG.
   
 ### Microsoft Office Word
 
@@ -205,5 +217,27 @@ Music Score
   : Create a *talking score*.
     
     - Tools for creating talking scores may be limited currently.
+    
+<dt> Chemical Formulas/Equations </dt>
+
+<dd>
+
+
+::: {.subj-tag}
+
+  - Subject Tags:
+    - Chemistry [CHEM]
+    - Biology [BIOL]
+    
+:::
+
+appropriate MathML
+
+</dd>
+
 
 </dl>
+
+
+
+[^kb_1]: Page always under construction. [Knowlege Base Definition | How to Use This Page](https://www.atlassian.com/itsm/knowledge-management/what-is-a-knowledge-base) [Example of Knowledge Base](https://kbx.macrium.com/macrium-reflect-x)
