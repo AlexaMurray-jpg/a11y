@@ -134,7 +134,7 @@ This is a Bookdown GitBook site hosted on GitHub pages. With [GitHub Flow](https
 | lorem ipsum alternative text[^m_1] |
 | lorem ipsum endnote |
 | lorem ipsum **Clickable Button Name** |
-| lorem ipsum *Non-clickable UI Component Nam * |
+| lorem ipsum *Non-clickable UI Component Name * |
 | lorem ipsum **Ctrl** + **Alt** + **Right Arrow** |
 | lorem ipsum **Ctrl** + **A** |
 
