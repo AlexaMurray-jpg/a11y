@@ -1,6 +1,31 @@
-# Creating Accessible PDFs
+# Accessible Math
 
-In my opninion, the best way to create accessible math PDFs is via LaTeX, using the tagdf package.
+{{construction}}
+
+## Accessible Outputs Via Mathpix
+
+You can use the following routes to create accessible outputs via Mathpix:
+
+- DOCX | export as Word document
+- HTML \ | export as HTML, after enabling export with MathML in settings
+- PDF \ \ \ | export to Overleaf, and add the tagpdf invocation; compile to PDF
+
+Or, you can use Markdown results from Mathpix to output multiple formats (PDF, HTML, EPUB, Word) at once.
+
+Mathpix snipping tool can OCR:
+
+- individual math equations/expressions
+- paragraphs containing numbers as currency, simple math, lists
+  - useful when you need correct unicode characters for simple math
+- tables
+- lists
+- chemical equations
+
+Mathpix can also convert entire documents.
+
+## Creating Accessible Math PDFs
+
+In my opinion, the best way to create accessible math PDFs is via LaTeX, using the tagdf package.
 
 I prefer doing this through R Markdown, but if you are using straight LaTeX, one convenient way is combining Mathpix and Overleaf.
 
@@ -71,3 +96,30 @@ The following is the text of the speech viewer for NVDA when it reads from the P
 Video Demonstration:
 
 -->
+## Screen Reader Math
+
+*A bit about screen readers with math support.*
+
+### NVDA
+
+NVDA from NV Access is a popular screen reader on Windows, and it has robust math support! As of the 2026 stable release, MathCAT support is built-in!
+
+#### Features for speech:
+
+  - navigate math horizontally and vertically
+  - announce math customization:
+     - no announcement
+     - annoounce with beep (sound a beep before and after each math expression)
+  - switch between 3 spoken math engines
+  - change verbosity level
+  - copy as MathML, LaTeX, AsciiMath
+  - above features supported for MathML in HTML, PDF, and EPUB
+
+#### Mathjax vs MathML + Mathjax
+
+*Performance comparison of NVDA on HTML files with "only Mathjax" versus MathML and Mathjax.*
+
+Mathjax provide amazing accessibility features for people who don't rely on speech output of screen readers. However, the default options used in popular implementations can degrade screen reader performance. For example, if every math expression is announced with "clickable," this defeats the purpose of being able to change math announcement between **none**  and **announce with beep**.
+
+For this reason, it is important to be mindful of how Mathjax is incorporated into HTML files. If possible, it is best to use a tool that writes math as MathML into the HTML file. This way the user can readily use the file offline, get the best accessibility outputs, and choose between using Mathjax and not using it (opening it offline).
+
