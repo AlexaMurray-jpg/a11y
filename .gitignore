@@ -1,6 +1,7 @@
 # don't push local rendered files in master branch
 _book/
 _bookdown_files/
+_ignore
 libs/
 **/*.html
 # ignore all html files except:
