@@ -45,7 +45,7 @@ Edit a link (change a link’s destination)
   #. Change the URL text.
   #. Click **OK**.
   
-Export An Image
+Export An Image from a PDF
 
 : *(Potentially needed when rebuilding PDFs.)*
 
@@ -56,6 +56,41 @@ Export An Image
      *(Will be highlighted in blue.)*
   #. Right-click the image.
   #. Choose **Save image as** from the context menu.
+  
+### Microsoft Office Word
+
+Add a Math Expression
+
+: Paste in MathML from Mathpix.
+
+  #. Open the Mathpix Desktop App.
+  #. Take a snip using the snipping tool.
+  #. Copy *MathML (Ms Word)* from the **Data** tab.
+  #. Paste anywhere in the Word document.
+  
+     - You do not need to insert an empty equation first; just place your cursor anywhere before pasting.
+     
+: Use the Word ribbon.
+ 
+  #. From **Home** tab, choose **Insert** > **Equation**.
+  #. A new tab, **Equation** appears. From this tab:
+  
+     - Add mathematical symbols.
+     - Add mathematical structures.
+       *Example: an exponent, with an empty placeholder in the base and empty placeholder in the exponent.*
+     - Fill structures with mathematical symbols.
+     - Type math using LaTex or UnicodeMath.
+       #. Select input method (LaTeX or UnicodeMath) from the ribbon.
+       #. Type the math using LaTeX or UnicodeMath in empty equation placeholder boxes.
+       
+          *Once you navigate out of the math equation box, it will automatically convert to the type of math we want.*
+     - Correct math using Linear Mode.
+       #. Select input method (LaTeX or UnicodeMath) from the ribbon.
+       #. Siwtch to Linear Mode using the three-dot menu on the equation box.
+       #. Edit the math by typing LaTeX or UnicodeMath.
+       #. Switch back to Professional Mode using the three-dot menu on the equation box.
+       
+          *Linear Mode can also be used to display LaTeX or UnicodeMath syntax, when that is the end goal for a document.*
   
 ## Tech: What-To
 
@@ -165,6 +200,20 @@ General Solution:
 
 </dd>
 
+Music Score
+
+: Attach a MusicXML file for each staff in the score.
+
+  - Include each staff in the primary document as an image.
+  - Give the image summary alt text. (Include key signature/unpitched status, time signature, number of measures, inclusion of pickup measures.)
+  - Attach each MusicXML file to the appropriate image, or link it in an endnote.
+  
+    - MusicXML files can be navigated with screen readers in music composition software.
+    - Music composition software may lack a *say all* feature for listening to MusicXML files.
+    
+: Create a *talking score*.
+
+  - Tools for creating talking scores may be limited currently.
 
 </dl>
 
