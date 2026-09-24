@@ -208,19 +208,16 @@ General Solution:
 </dd>
 
 Music Score
-
-: Attach a MusicXML file for each staff in the score.
-
-  - Include each staff in the primary document as an image.
-  - Give the image summary alt text. (Include key signature/unpitched status, time signature, number of measures, inclusion of pickup measures.)
-  - Attach each MusicXML file to the appropriate image, or link it in an endnote.
+  : Attach a MusicXML file for each staff in the score.
   
-    - MusicXML files can be navigated with screen readers in music composition software.
-    - Music composition software may lack a *say all* feature for listening to MusicXML files.
+    - Include each staff in the primary document as an image.
+    - Give the image summary alt text. (Include key signature/unpitched status, time signature, number of measures, inclusion of pickup measures.)
+    - Attach each MusicXML file to the appropriate image, or link it in an endnote.
+      - MusicXML files can be navigated with screen readers in music composition software.
+      - Music composition software may lack a *say all* feature for listening to MusicXML files.
+  : Create a *talking score*.
     
-: Create a *talking score*.
-
-  - Tools for creating talking scores may be limited currently.
+    - Tools for creating talking scores may be limited currently.
 
 </dl>
 
