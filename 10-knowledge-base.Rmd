@@ -126,7 +126,7 @@ General Solution:
 
 - Basic alt text.
 - More descriptive caption with reference to endnote.
-- End note with structured information (lists, tables, paragraphs, etc).
+- Endnote with structured information (lists, tables, paragraphs, etc).
   - Maintain page numbers of original document.
   - Additional structures should go at end of document.
   - Lets AT users discuss page numbers of content with others.
