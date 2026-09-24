@@ -21,8 +21,6 @@ knitr::write_bib(c(
 
 # Home Page
 
-{{construction}}
-
 a11y
 
 : digital accessibility
