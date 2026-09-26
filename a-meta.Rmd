@@ -97,6 +97,14 @@ This is a Bookdown GitBook site hosted on GitHub pages. With [GitHub Flow](https
 
 :::
 
+:::{.det}
+
+[Footnote Labels]{.summ}
+
+To separate out footnote labels across different pages, I append an abbreviation for each page to the number. For example, a footnote on the W*ord* R*emediation* page might get the label `[^wr_1]` rather than `[^1]`.
+
+:::
+
 ## Link Labels
 
 [msnip]: https://snip.mathpix.com/home  "Mathpix Snip Web App"
