@@ -251,21 +251,21 @@ AI can probably identify most types of graphs and charts you will see, but it ca
 Heat Map
   : \
     
-    ```{r heatmap-example, echo=FALSE}
+    ```{r heatmap-example, echo=FALSE, out.width="40%"}
     data <- matrix(mtcars$mpg, mtcars$cyl, mtcars$disp)
     heatmap(data)
     ```
 
 Box Plot/Box and Whisker Plot
   : \
-    ```{r box-example, echo=FALSE}
+    ```{r box-example, echo=FALSE, out.width="33%"}
     boxplot(mtcars$mpg)
     ```
 
 Histogram
   : \
     
-    ```{r hist-example, echo=FALSE}
+    ```{r hist-example, echo=FALSE, out.width="33%"}
     hist(mtcars$mpg)
     ```
   
