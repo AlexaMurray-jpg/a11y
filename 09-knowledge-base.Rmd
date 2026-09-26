@@ -16,6 +16,8 @@ Sections:
 
 **Content: What-To** tells you what accessibility structures we prefer to use for specialty topics (*There's a network diagram in this computer science homework . . . what do I put for the alt text? Is alt text enough?*)
 
+*At the end is a glossary to help you identify the names of specialized types of charts, graphs, and diagrams you may find when remediating documents.*
+
 ## Tech: How-To
 
 *Windows operating system instructions.*
@@ -106,14 +108,16 @@ Broken link
 
       - Set link alternate text or display text (whichever applies) to the title of the original target destination.
       - Add “link broken” to link alternate text 
-        - broken links may not be announced clearly
-          - some broken links such as [404 errors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404) will likely be announced clearly
-          - others may not
-        - AT should correclty announce where a link goes for security reasons
-          (If a link no longer goes to the page it was supposed to go to, an AT user should know that before opening)
+        - Broken links may not be announced clearly.
+          - Some broken links such as [404 errors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404) will likely be announced clearly.
+          - Others may not.
+        - AT should correclty announce where a link goes for security reasons.
+          (If a link no longer goes to the page it was supposed to go to, an AT user should know that before opening.)
       - *STARS only: Report broken links to GAA.*
 
 ## Content: What-To
+
+For basic chart alt text guidance, one of the best sources of examples is [Section 508](https://www.section508.gov/create/alternative-text/#charts-graphs-and-diagrams).
 
 <dl>
 
@@ -133,10 +137,12 @@ General Solution:
 - Basic alt text.
 - More descriptive caption with reference to endnote.
 - Endnote with structured information (lists, tables, paragraphs, etc).
+  - If paragraphs of description are needed, you may wish to add both a *terse* and *verbose* version of descriptions, in a list.
+    - A list item may contain multiple paragraphs.
   - Maintain page numbers of original document.
-  - Additional structures should go at end of document.
-  - Lets AT users discuss page numbers of content with others.
-    - Important for discussion sections in academic settings.
+    - Additional structures should go at end of document.
+    - Lets AT users discuss page numbers of content with others.
+      - Important for discussion sections in academic settings.
 
 </dd>
 
@@ -238,6 +244,31 @@ appropriate MathML
 
 </dl>
 
+## Glossary: Diagrams, Graphs, Charts
+
+AI can probably identify most types of graphs and charts you will see, but it can be helpful to have a reference on hand to look up the terms you need. This section will likely eventually be subsumed into *Content: What-To.*
+
+Heat Map
+  : \
+    
+    ```{r heatmap-example, echo=FALSE}
+    data <- matrix(mtcars$mpg, mtcars$cyl, mtcars$disp)
+    heatmap(data)
+    ```
+
+Box Plot/Box and Whisker Plot
+  : \
+    ```{r box-example, echo=FALSE}
+    boxplot(mtcars$mpg)
+    ```
+
+Histogram
+  : \
+    
+    ```{r hist-example, echo=FALSE}
+    hist(mtcars$mpg)
+    ```
+  
 
 
 [^kb_1]: Page always under construction. [Knowlege Base Definition | How to Use This Page](https://www.atlassian.com/itsm/knowledge-management/what-is-a-knowledge-base) [Example of Knowledge Base](https://kbx.macrium.com/macrium-reflect-x)
