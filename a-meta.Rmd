@@ -146,4 +146,29 @@ To separate out footnote labels across different pages, I append an abbreviation
 | lorem ipsum **Ctrl** + **Alt** + **Right Arrow** |
 | lorem ipsum **Ctrl** + **A** |
 
+### Video Style Guide
+
+:::{.det}
+
+[Guidelines for elements of video demonstrations.]{.summ}
+
+- Use dark theme when possible.
+- Don't use Windows high-contrast themes.
+- Black mouse with white outline.
+- Enlarge mouse.
+- Learning objectives at beginning.
+- List tools to be used.
+- Outline parts of video after learning objectives.
+- Summary of learning at end.
+- Time-lapse repetitive periods.
+  - Show once at full-speed.
+  - Use an icon to indicate time-lapse.
+- Zoom inset when actions are too small to view.
+  - Visible outline on insets.
+- Outline key buttons and tabs.
+  - Preference to purple and green.
+- Prefer black-and-white designs (accessibility).
+
+:::
+
 [^m_1]: As opposed to *alternate text*.
