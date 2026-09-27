@@ -246,7 +246,7 @@ appropriate MathML
 
 ## Glossary: Diagrams, Graphs, Charts
 
-AI can probably identify most types of graphs and charts you will see, but it can be helpful to have a reference on hand to look up the terms you need. This section will likely eventually be subsumed into *Content: What-To.*
+AI can probably identify most types of graphs and charts you will see, but it can be helpful to have a reference on hand to look up the terms you need. This section will likely eventually be subsumed into *Content: What-To.*[^kb_2]
 
 Heat Map
   : \
@@ -279,3 +279,10 @@ Histogram
 
 
 [^kb_1]: Page always under construction. [Knowlege Base Definition | How to Use This Page](https://www.atlassian.com/itsm/knowledge-management/what-is-a-knowledge-base) [Example of Knowledge Base](https://kbx.macrium.com/macrium-reflect-x)
+
+[^kb_2]: Charts provided in this section are primarily generated (including data) by base R and R packages, with (slightly modified) example code from:
+
+    - [R for Data Science (2e)](https://r4ds.hadley.nz)
+         
+    They are not provided as appropriate data visualizations, but as examples to help remediators identify the names of different types of graphs.
+
