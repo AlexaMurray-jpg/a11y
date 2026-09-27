@@ -267,7 +267,14 @@ Histogram
     
     ```{r hist-example, echo=FALSE, out.width="33%"}
     hist(mtcars$mpg)
+    
+    ggplot(
+      data = mtcars,
+      mapping = aes(x = mpg)
+    ) +
+      geom_histogram(bins = 10, na.rm = TRUE)
     ```
+    
   
 
 
