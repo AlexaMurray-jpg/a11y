@@ -47,7 +47,7 @@ The process of making an inaccessible document digitally accessible is called re
 
 ## Digitally Accessible Documents
 
-If a document is digitally accessible, someone should be able to read it using assistive technology (*AT*), like a refreshable braille pad or screen reader. We will use screen readers for our examples, because that is one of the forms of AT with the lowest learning curves.
+If a document is digitally accessible, someone should be able to read it using assistive technology (*AT*), like a refreshable braille pad or screen reader.[^i_3] We will use screen readers for our examples, because that is one of the forms of AT with the lowest learning curves.
 
 A screen reader is software that reads aloud everything on a computer screen, whether menus and buttons or the contents of documents.
 
@@ -87,3 +87,15 @@ The task of document remediation is to take documents that are inaccessible and 
 [^i_1]: Called *input gestures*
 
 [^i_2]: This site is not yet digitally accessible.
+
+[^i_3]: Other measures of digital accessibility:
+   
+    - Documents should work well in a screen magnifier.
+    - Colors used should leave document contents intelligible to those with color blindness.
+    - Videos
+      - shouldn't play automatically
+      - should have captions.
+    - Documents should work well in different screen sizes.
+  
+   
+    However, the bulk of the work of document remediation will typically be ensuring content is included "semantically," and an easy way to think about this is whether or not the content works the way it should in a screen reader.
