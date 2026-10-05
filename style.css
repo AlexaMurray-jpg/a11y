@@ -102,6 +102,8 @@ pre code {
   background:black;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal dd table {width:30%; height: 75%; font-size:0.75em}
+
 /*likely a better way to do this; adjust later:*/
 .book .book-body .page-wrapper .page-inner section.normal pre,
 .book .book-body .page-wrapper .page-inner section.normal code {background:black; color:white}
