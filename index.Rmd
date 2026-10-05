@@ -80,7 +80,7 @@ In general, these features should exist for the document in all file types.
 
 Not all documents are set up to work with assistive technology this way. This is where "remediation" comes in.
 
-***Example:*** You might have a Microsoft Word document where section headings have large, bolded font, but heading styles haven't been applied. To make this accessible, you would have to apply the heading styles; once you do, a screen reader will be able to "find" the headings and perform all of the above functions with them.
+***Example:*** You might have a Microsoft Word document where section headings have large, bold font, but heading styles haven't been applied. To make this accessible, you would have to apply the heading styles; once you do, a screen reader will be able to "find" the headings and perform all of the above functions with them.
 
 The task of document remediation is to take documents that are inaccessible and apply the correct features that will make them accessible. With simple documents, this is often a matter of knowing basic document editor features well (get ready to sharpen your Microsoft and Acrobat skills!), but there is also much to learn for complex documents.
 
