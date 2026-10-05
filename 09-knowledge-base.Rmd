@@ -318,8 +318,17 @@ Connectome
     
     ```
     
+(ref:kbdef) [Knowlege Base Definition | How to Use This Page](https://www.atlassian.com/itsm/knowledge-management/what-is-a-knowledge-base)
 
-[^kb_1]: Page always under construction. [Knowlege Base Definition | How to Use This Page](https://www.atlassian.com/itsm/knowledge-management/what-is-a-knowledge-base) [Example of Knowledge Base](https://kbx.macrium.com/macrium-reflect-x)
+(ref:kbex) [Example of Knowledge Base](https://kbx.macrium.com/macrium-reflect-x)
+
+
+
+[^kb_1]: Page always under construction.
+    
+    (ref:kbdef)
+    
+    (ref:kbex)
 
 [^kb_2]: Charts provided in this section are primarily generated (including data) by base R and R packages, with (slightly modified) example code from:
 
