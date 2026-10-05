@@ -145,6 +145,7 @@ To separate out footnote labels across different pages, I append an abbreviation
 | lorem ipsum *Non-clickable UI Component Name * |
 | lorem ipsum **Ctrl** + **Alt** + **Right Arrow** |
 | lorem ipsum **Ctrl** + **A** |
+| drop-down menu |
 
 ### Video Style Guide
 
