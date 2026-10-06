@@ -18,7 +18,6 @@ Sections:
 
 *At the end is a glossary to help you identify the names of specialized types of charts, graphs, and diagrams you may find when remediating documents.*
 
-
 ## Tech: How-To
 
 *Windows operating system instructions.*
@@ -48,7 +47,7 @@ Edit a link (change a link’s destination)
   
 Export An Image from a PDF
 
-: \ (Potentially needed when rebuilding PDFs.)
+: \ *(Potentially needed when rebuilding PDFs.)*
   
    At times, you might just screenshot an image when rebuilding PDFs. However, retaining image quality can be important for AT users with partial sight.
    
@@ -85,7 +84,7 @@ Add a Math Expression
   : - **Solution 1**: Paste in MathML from Mathpix.
       #. Open the Mathpix Desktop App.
       #. Take a snip using the snipping tool.
-      #. Copy *MathML (Ms Word)* from the **Data** tab.
+      #. Copy *MathML (MS Word)* from the **Data** tab.
       #. Paste anywhere in the Word document.
         - You do not need to insert an empty equation first; just place your cursor anywhere before pasting.
     - **Solution 2**: Use the Word ribbon.
