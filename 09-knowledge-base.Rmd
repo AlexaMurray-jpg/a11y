@@ -114,15 +114,14 @@ Add a Math Expression
 Broken link
 
 : - Include *link broken* in the link description.
-
-      - Set link alternate text or display text (whichever applies) to the title of the original target destination.
-      - Add “link broken” to link alternate text 
-        - Broken links may not be announced clearly.
-          - Some broken links such as [404 errors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404) will likely be announced clearly.
-          - Others may not.
-        - AT should correclty announce where a link goes for security reasons.
-          (If a link no longer goes to the page it was supposed to go to, an AT user should know that before opening.)
-      - *STARS only: Report broken links to GAA.*
+    - Set link alternate text or display text (whichever applies) to the title of the original target destination.
+    - Add “link broken” to link alternate text 
+      - Broken links may not be announced clearly.
+        - Some broken links such as [404 errors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404) will likely be announced cleay.
+        - Others may not.
+      - AT should correclty announce where a link goes for security reasons.
+        (If a link no longer goes to the page it was supposed to go to, an AT user should know that before opening.)
+    - *STARS only: Report broken links to GAA.*
 
 :::::::::::::::::::::
 
