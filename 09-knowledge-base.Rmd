@@ -47,23 +47,16 @@ Edit a link (change a link’s destination)
   #. Change the URL text.
   #. Click **OK**.
   
-<dl>
+Export An Image from a PDF
+
+: \ (Potentially needed when rebuilding PDFs.)
   
-<dt>Export An Image from a PDF </dt>
-
-<dd>
-
-(Potentially needed when rebuilding PDFs.)
-
-At times, you might just screenshot an image when rebuilding PDFs. However, retaining image quality can be important for AT users with partial sight.
-
-#. Exit any open tools.
-#. Click the image to select it. <br> *(Will be highlighted in blue.)*
-#. Right-click the image.
-#. Choose **Save image as** from the context menu.
-
-</dd>
-</dl>
+   At times, you might just screenshot an image when rebuilding PDFs. However, retaining image quality can be important for AT users with partial sight.
+   
+   #. Exit any open tools.
+   #. Click the image to select it. <br> *(Will be highlighted in blue.)*
+   #. Right-click the image.
+   #. Choose **Save image as** from the context menu.
   
 Export PDF Pages as Images
 
@@ -135,30 +128,27 @@ Broken link
 
 For basic chart alt text guidance, one of the best sources of examples is [Section 508](https://www.section508.gov/create/alternative-text/#charts-graphs-and-diagrams).
 
-<dl>
+Complicated Graphics
 
-<dt> Complicated Graphics </dt>
-
-<dd>
-
-::: {.subj-tag}
+: ::: {.subj-tag}
 
   - Subject Tags:
     - All
   
-:::
+  :::
+  
+  General Solution:
 
-General Solution:
+  - Basic alt text.
+  - More descriptive caption with reference to endnote.
+  - Endnote with structured information (lists, tables, paragraphs, etc).
+    - If paragraphs of description are needed, you may wish to add both a *terse* and *verbose* version of descriptions, in a list.
+      - A list item may contain multiple paragraphs.
+    - Maintain page numbers of original document.
+      - Additional structures should go at end of document.
+      - Lets AT users discuss page numbers of content with others.
+        - Important for discussion sections in academic settings.
 
-- Basic alt text.
-- More descriptive caption with reference to endnote.
-- Endnote with structured information (lists, tables, paragraphs, etc).
-  - If paragraphs of description are needed, you may wish to add both a *terse* and *verbose* version of descriptions, in a list.
-    - A list item may contain multiple paragraphs.
-  - Maintain page numbers of original document.
-    - Additional structures should go at end of document.
-    - Lets AT users discuss page numbers of content with others.
-      - Important for discussion sections in academic settings.
 
 </dd>
 
