@@ -53,7 +53,7 @@ A screen reader is software that reads aloud everything on a computer screen, wh
 
 For a screen reader to read documents, the files must be digitally accessible. The process of making files digitally accessible is called remediation.
 
-To better understand the remediation process, let's look at what a screen reader *does* with a digitally accessible document.
+To better understand the remediation process, let's look at what a screen reader *does* with a digitally accessible document. We will primarily use the screen reader [NVDA](https://www.nvaccess.org/download/), a free and open-source screen reader form NV Access. (Donation suggested.)
 
 - In NVDA, you can jump between headings 
   
