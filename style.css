@@ -104,6 +104,43 @@ pre code {
 
 .book .book-body .page-wrapper .page-inner section.normal dd table {width:30%; height: 75%; font-size:0.75em}
 
+/* ~~~~~ Offset colors for KB DLs ~~~~~ */
+
+.kb {
+    --dacc1: #f3f2f2;
+    --dacc2: #e7e4e4;
+}
+
+/*----------First set of two.----------*/
+.book .book-body .page-wrapper .page-inner section.normal .kb dd:nth-child(4n -2) {
+ background-color: var(--dacc2);
+ border-radius: 0px 0px 10px 10px / 10px;
+ padding: 1em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .kb dt:nth-child(4n - 3) {
+ background-color: var(--dacc2);
+ border-radius: 10px 10px 0px 0px / 10px;
+ padding: 1em;
+}
+/*-------------------------------------*/
+
+/*----------Second set of two.----------*/
+.book .book-body .page-wrapper .page-inner section.normal .kb dt:nth-child(4n -1) {
+ background-color: var(--dacc1);
+ border-radius: 10px 10px 0px 0px / 10px;
+ padding: 1em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .kb dd:nth-child(4n) {
+ background-color: var(--dacc1);
+ border-radius: 0px 0px 10px 10px / 10px;
+ padding: 1em;
+}
+/*-------------------------------------*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 /*likely a better way to do this; adjust later:*/
 .book .book-body .page-wrapper .page-inner section.normal pre,
 .book .book-body .page-wrapper .page-inner section.normal code {background:black; color:white}
