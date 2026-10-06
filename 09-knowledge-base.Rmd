@@ -18,9 +18,12 @@ Sections:
 
 *At the end is a glossary to help you identify the names of specialized types of charts, graphs, and diagrams you may find when remediating documents.*
 
+
 ## Tech: How-To
 
 *Windows operating system instructions.*
+
+::::::: {.kb} :::::::
 
 ### PDF: Acrobat
 
@@ -29,13 +32,9 @@ Delete a link
 : 1. Exit any open tools. (*Edit* tool, *Reading Order* tool . . .)
   2. Right-click the linked content (words, images).
   3. Select **Delete Link** from the context menu.
-  <li> As needed, either:
-       <ul>
-        <li> Recreate the link. </li>
-        <li> Adjust the link tags and containers in *Accessibility tags* panel and *Content* panel. </li>
-       </ul>
-   </li>
-
+  4. As needed, either:
+     - Recreate the link.
+     - Adjust the link tags and containers in *Accessibility tags* panel and *Content* panel.
 
 Edit a link (change a link’s destination)
 
@@ -83,33 +82,35 @@ PAC Error: Embed fonts.
 ### Microsoft Office Word
 
 Add a Math Expression
-  : Paste in MathML from Mathpix.
-    
-    #. Open the Mathpix Desktop App.
-    #. Take a snip using the snipping tool.
-    #. Copy *MathML (Ms Word)* from the **Data** tab.
-    #. Paste anywhere in the Word document.
+  : - **Solution 1**: Paste in MathML from Mathpix.
+      #. Open the Mathpix Desktop App.
+      #. Take a snip using the snipping tool.
+      #. Copy *MathML (Ms Word)* from the **Data** tab.
+      #. Paste anywhere in the Word document.
         - You do not need to insert an empty equation first; just place your cursor anywhere before pasting.
 
-  : Use the Word ribbon.
-    
-    #. From **Home** tab, choose **Insert** > **Equation**.
-    #. A new tab, **Equation** appears. From this tab:
-       - Add mathematical structures.
-         <br><small>*Example: an exponent, with an empty placeholder in the base and empty placeholder in the exponent.*</small>
-       - Fill structures with mathematical symbols.
-       - Type math using LaTex or UnicodeMath.
-         #. Select input method (LaTeX or UnicodeMath) from the ribbon.
-         #. Type the math using LaTeX or UnicodeMath in empty equation placeholder boxes.
-            <br><small>*Once you navigate out of the math equation box, it will automatically convert to the type of math we want.*</small>
-       - Correct math using Linear Mode.
-         #. Select input method (LaTeX or UnicodeMath) from the ribbon.
-         #. Siwtch to Linear Mode using the three-dot menu on the equation box.
-         #. Edit the math by typing LaTeX or UnicodeMath.
-         #. Switch back to Professional Mode using the three-dot menu on the equation box.
-            <br><small>*Linear Mode can also be used to display LaTeX or UnicodeMath syntax, when that is the end goal for a document.*</small>
-  
+    - **Solution 2**: Use the Word ribbon.
+      #. From **Home** tab, choose **Insert** > **Equation**.
+      #. A new tab, **Equation** appears. From this tab:
+         - Add mathematical structures.
+           <br><small>*Example: an exponent, with an empty placeholder in the base and empty placeholder in the exponent.*</small>
+         - Fill structures with mathematical symbols.
+         - Type math using LaTex or UnicodeMath.
+           #. Select input method (LaTeX or UnicodeMath) from the ribbon.
+           #. Type the math using LaTeX or UnicodeMath in empty equation placeholder boxes.
+              <br><small>*Once you navigate out of the math equation box, it will automatically convert to the type of math we want.*</small>
+         - Correct math using Linear Mode.
+           #. Select input method (LaTeX or UnicodeMath) from the ribbon.
+           #. Siwtch to Linear Mode using the three-dot menu on the equation box.
+           #. Edit the math by typing LaTeX or UnicodeMath.
+           #. Switch back to Professional Mode using the three-dot menu on the equation box.
+              <br><small>*Linear Mode can also be used to display LaTeX or UnicodeMath syntax, when that is the end goal for a document.*</small>
+
+:::::::::::::::::::::
+
 ## Tech: What-To
+
+::::::: {.kb} :::::::
 
 Broken link
 
@@ -124,9 +125,13 @@ Broken link
           (If a link no longer goes to the page it was supposed to go to, an AT user should know that before opening.)
       - *STARS only: Report broken links to GAA.*
 
+:::::::::::::::::::::
+
 ## Content: What-To
 
 For basic chart alt text guidance, one of the best sources of examples is [Section 508](https://www.section508.gov/create/alternative-text/#charts-graphs-and-diagrams).
+
+::::::: {.kb} :::::::
 
 Complicated Graphics
 
@@ -149,78 +154,69 @@ Complicated Graphics
       - Lets AT users discuss page numbers of content with others.
         - Important for discussion sections in academic settings.
 
+Network Diagram/Graph - directed, weighted
 
-</dd>
+: ::: {.subj-tag}
 
-<dt>Network Diagram/Graph - directed, weighted</dt>
-
-<dd>
-
-::: {.subj-tag}
-
-  - Subject Tags:
-    - Computer Science [CPSC]
-    - Mathematics \[MATH]
+   - Subject Tags:
+     - Computer Science [CPSC]
+     - Mathematics \[MATH]
   
-:::
-
-- Exercise asks for an *adjacency matrix.*
-
-  - **Instructions**:
-    - Alt text and caption from *Complicated Graphics > General Solution*.
-    - Endnote with list of tables for each node, with columns *Directed Toward* and *With Weight.*
-  - **Example**:
+  :::
   
-    (ref:netalt) A directed, weighted network visualized as a collection of numbered circles connected by numbered arrows.
+  - Exercise asks for an *adjacency matrix.*
+
+    - **Instructions**:
+      - Alt text and caption from *Complicated Graphics > General Solution*.
+      - Endnote with list of tables for each node, with columns *Directed Toward* and *With Weight.*
+    - **Example**:
     
-    (ref:netcap) Weighted network with node set V consisting of nodes ${1,2,3 . . . 5}$. The nodes in V are related to each other via directed arrows with origin, end, and weights described in endnote. ^[reference](https://www.example.com)^
+      (ref:netalt) A directed, weighted network visualized as a collection of numbered circles connected by numbered arrows.
+      
+      (ref:netcap) Weighted network with node set V consisting of nodes ${1,2,3 . . . 5}$. The nodes in V are related to each other via directed ar  rows with origin, end, and weights described in endnote. ^[reference](https://www.example.com)^
+    
+      ```{r network-diagram-2, echo=FALSE, out.width="75%", fig.alt='(ref:netalt)', fig.cap='(ref:netcap)'}
+      
+      knitr::include_graphics("image/networkdiagram.png")
+      
+      ```
+      
+      **Alt Text**: (ref:netalt)
+      
+      **Endnote**:
+      
+      - Node 1
   
-    ```{r network-diagram, echo=FALSE, out.width="75%", fig.alt='(ref:netalt)', fig.cap='(ref:netcap)'}
-    
-    knitr::include_graphics("image/networkdiagram.png")
-    
-    ```
-    
-    **Alt Text**: A directed, weighted network visualized as a collection of numbered circles connected by numbered arrows.
-    
-    **Endnote**:
-    
-    - Node 1
+        Directed To   Weight
+        ------------- --------
+        2             1
+        3             5
+      
+      - Node 2
+      
+        Directed To   Weight
+        ------------- --------
+        3             20
+      
+      - Node 3
+      
+        Directed To   Weight
+        ------------- --------
+        2             5
+        4             15
+      
+      - Node 4
+      
+        Directed To   Weight
+        ------------- --------
+        2             20
+      
+      - Node 5
+      
+        Directed To   Weight
+        ------------- --------
+        4             25
 
-      Directed To   Weight
-      ------------- --------
-      2             1
-      3             5
-    
-    - Node 2
-    
-      Directed To   Weight
-      ------------- --------
-      3             20
-    
-    - Node 3
-    
-      Directed To   Weight
-      ------------- --------
-      2             5
-      4             15
-    
-    - Node 4
-    
-      Directed To   Weight
-      ------------- --------
-      2             20
-    
-    - Node 5
-    
-      Directed To   Weight
-      ------------- --------
-      4             25
-
-         
-         
-
-</dd>
 
 Music Score
   : ::: {.subj-tag}
@@ -248,25 +244,19 @@ Music Score
       - Talking scores can be generated from MusicXML files.
         - A user may be able to generate their own talking score if provided a MusicXML file.
     
-<dt> Chemical Formulas/Equations </dt>
+Chemical Formulas/Equations
 
-<dd>
-
-
-::: {.subj-tag}
+: ::: {.subj-tag}
 
   - Subject Tags:
     - Chemistry [CHEM]
     - Biology [BIOL]
     
-:::
+  :::
+  
+  appropriate MathML
 
-appropriate MathML
-
-</dd>
-
-
-</dl>
+:::::::::::::::::::::
 
 ## Glossary: Diagrams, Graphs, Charts
 
@@ -307,6 +297,7 @@ Connectome
     knitr::include_graphics("https://zaoqu-liu.github.io/Connectome/articles/figures/circos_plot.png")
     
     ```
+    
     
 (ref:kbdef) [Knowlege Base Definition | How to Use This Page](https://www.atlassian.com/itsm/knowledge-management/what-is-a-knowledge-base)
 
