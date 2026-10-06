@@ -95,8 +95,8 @@ return {
             local elem_1 = pandoc.Span {pandoc.Emph {pandoc.Str "Warning | Backup your data before proceeding."}}
             elem_1.attributes.class = 'warning-box'
             return elem_1
-        elseif elem.text == "{~br}" then
-            local elem_1 = pandoc.RawInline('html', '<br/')
+        elseif elem.text == "{br}" then
+            local elem_1 = pandoc.RawInline('html', '<br>')
             return elem_1
         else
             return elem
