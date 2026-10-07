@@ -172,4 +172,6 @@ To separate out footnote labels across different pages, I append an abbreviation
 
 :::
 
+[Test](glossary.html)
+
 [^m_1]: As opposed to *alternate text*.
