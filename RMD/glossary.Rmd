@@ -1,0 +1,4 @@
+# Glossary
+
+Keyboard Navigation
+: Moving between on-screen elements (menus, buttons, windows) by pressing keyboard keys rather than using a mouse or trackpad.
