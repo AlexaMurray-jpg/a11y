@@ -40,6 +40,9 @@ jobs:
       - name: Render book
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
 
+      - name: Render standalone files
+        run: Rscript -e 'for (i in list.files("RMD", full.names = TRUE)) {rmarkdown::render(i, output_format = bookdown::html_document2(number_sections = FALSE), output_dir = "_book")}'
+
       - name: Copy video assets into output
         run: cp -r video _book/video
 
