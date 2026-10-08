@@ -109,7 +109,7 @@ NVDA from NV Access is a popular screen reader on Windows, and it has robust mat
   - navigate math horizontally and vertically
   - announce math customization:
      - no announcement
-     - annoounce with beep (sound a beep before and after each math expression)
+     - announce with beep (sound a beep before and after each math expression)
   - switch between 3 spoken math engines
   - change verbosity level
   - copy as MathML, LaTeX, AsciiMath
@@ -123,3 +123,31 @@ Mathjax provide amazing accessibility features for people who don't rely on spee
 
 For this reason, it is important to be mindful of how Mathjax is incorporated into HTML files. If possible, it is best to use a tool that writes math as MathML into the HTML file. This way the user can readily use the file offline, get the best accessibility outputs, and choose between using Mathjax and not using it (opening it offline).
 
+## Spoken Math
+
+A number of different spoken math engines exist, each designed to prioritize different principles: ease of use (without training), explicitness, precision. Examples are MathSpeak, Clear Speak, LiteralSpeak, SimpleSpeak.
+
+- MathSpeak can be particularly useful for post-secondary math. A company called See.Write.Hear developed it from the [mathspeak](https://accessinghigherground.org/handouts2013/HTCTU%20Alt%20Format%20Manuals/Math%20Accommodations/07%20MATHSPEAK.pdf) system created by Dr. Abraham Nemeth, the creator of the Nemeth Math Braille Code. 
+
+  ::: {.det}
+  [Learn More]{.summ}
+  
+  If you want to learn more about accessible math, or about digital accessibility in general, I recommend reading the 
+  full lecture above. However, here are some highlights.
+  
+  In it, Nemeth discusses the system that he and his readers (students he hired) used for pronouncing and transcribing mathematical texts. (This was not a formalized spoken math engine, but was later developed into one by a company.)
+  
+  This quote highlights the nature (literal, explicit, verbose/wordy) of his system.
+  
+  > Lowercase letters are pronounced at face value without modification. They are never combined to form words. In particular, the trigonometric and other function abbreviations are spelled out rather than pronounced as words. We say "s i n" rather than "sine," "t a n" rather than "tan" or "tangent," "l o g" rather than "log," etc.” . . . A single uppercase letter is spoken as "upper" followed by the name of the letter. If a word is in uppercase, it is spoken as "upword" followed by the sequence of letters in the word, pronounced one letter at a time.
+  
+  However, the part of this lecture that I find the most illuminating for someone new to math accessibility is the discussion of fractions. In it, he illustrates how some information that is immediately available to sighted readers can be incorporated into a system for math pronunciation in a way that is concise. This is important, as he explains, so that an unsighted reader has access to the same information as a sighted reader at the same time in the cognitive process of reading:
+  
+  >We say "B-frac" as an abbreviation for "begin-fraction," and "E-frac" as an abbreviation for "end-fraction". We say "over" for the fraction line. . . . 
+>
+>A simple fraction (which has no subsidiary fractions) is said to be of order 0. By induction, a fraction of order n has at least one subsidiary fraction of order n-1. A fraction of order 1 is frequently referred to as a complex fraction, and one of order 2 as a hypercomplex fraction. Complex fractions are fairly common, hypercomplex fractions are rare, and fractions of higher order are practically non-existent. The order of a fraction is readily determined by a simple visual inspection, so that the sighted reader forms an immediate mental orientation to the nature of the notation with which he is dealing. It is important for a Braille reader to have this same information at the same time that it is available to the sighted reader. Without this information, the Braille reader may discover that he is dealing with a fraction whose order is higher than he expected, and may have to reformulate his thinking accordingly long after he has become aware of the outer fraction.
+>
+To communicate the presence of a complex fraction, we say "B-B-frac," "O-over," and"E-E-frac" for the components of a complex fraction . . . For a hypercomplex fraction, the components are spoken as "B-B-B-frac," "O-O-over," and "E-E-E-frac," respectively. You can see that the speech patterns are designed to facilitate transcription in the Nemeth Code, according to the rules of that Code.
+
+
+  :::
